@@ -1,0 +1,70 @@
+
+# Meetings {#sec-meeting}
+
+```{=html}
+<style>
+.flushright {
+   text-align: right;
+}
+</style>
+```
+
+:::{.callout-tip title="Quotes"}
+
+::: {.flushright data-latex=""}
+*Meetings embody and reveal your team culture. They expose who has the power, who gets listened to, and who feels comfortable speaking up.*\
+Minette Norman, The Boldly Inclusive Leader.
+
+*I wish I could go to more meetings today*\
+No one---ever.
+
+Ants do not have meetings. How can they accomplish so much as a group? Oh, wait.
+
+The absolute worst is the pre-meeting: a meeting to prepare for the meeting.
+:::
+:::
+
+## Introduction
+
+<!---
+https://ebookcentral.proquest.com/lib/vt/reader.action?docID=292516
+--->
+
+From *The Five Dysfunctions of a Team* by @Lencioni_2002 we know the importance
+of engaging in productive, ideological, and honest debate and conflict. The 
+single most important arena for conflict and conflict resolution in teams is
+the meeting. 
+
+If we want to work on high-performing teams---who doesn't?---then we should 
+look forward to being in meetings. Yet the opposite is true: we dread meetings.
+We dread them because they are boring, we dread them because so many are a waste 
+of time (the meeting that could have been an e-mail), keeping us from more 
+important and interesting things. We dread them because they can be acrimonious,
+uncomfortable, stressful. We dread the status posturing and pontificating
+by some people while others are trying not to get stuck with extra work as the
+result of the meeting.
+
+@Lencioni_2002 asks an interesting question: why do we prefer going to a movie
+rather than a meeting? After all, movies are typically longer than meetings,
+they are not interactive, you cannot engage with the actors on screen, you
+cannot speak up or comment in the theater. Movies have no direct impact on 
+our lives. You might feel like a superhero when leaving the theater, but the 
+movie has not turned you into one; the feeling wears off. Meetings, on the other
+hand, can have a direct impact on our lives, personally and professionally.
+
+If meetings were more like movies, would we enjoy them more? The one thing all
+movies worth watching have in common is, ..., wait for it, **conflict**. The flaws
+and internal struggles that connect us to the character. Buzz Lightyear is 
+a toy that does not realize he is a toy. Shrek struggles against being seen as
+a horrible outcast, an ogre. James Bond struggles against Blofeld, Largo, or 
+Dr. No. The resolution of the struggle creates suspense.
+
+Meetings that are more like movies are loaded with conflict. That does not
+mean shooting at each other across the room or an outbreak of fisticuffs, but
+an honest debate of something worth debating. 
+
+
+
+
+
+

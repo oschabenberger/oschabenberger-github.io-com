@@ -1,0 +1,161 @@
+<style>
+.flushright {
+   text-align: right;
+}
+</style>
+
+# Nonverbal Cues {#sec-nonverbal}
+
+## Introduction
+
+We introduced nonverbal communication as a form of communication in @sec-theory-nonverbal
+as the ways in which we convey information by other means than speaking or
+writing. The 7\% myth, that 93\% of communication is nonverbal was debunked 
+there. Whatever the true percentage, nonverbal communication is very important.
+You can use it to your advantage and you can sabotage communication efforts
+with it. 
+
+Much of it is kind of obvious, for example, the effects of posture, body
+language, and tone of voice, but it still takes practice to avoid nonverbal mistakes
+and to draw on positive nonverbal cues to strengthen your communication.
+Finally, pointing out elements of nonverbal communication you become more aware
+and tuned in, making it easier to read situations.
+
+It is easy to list what to do and what not to do with respect to nonverbal
+communication, but changing things can be difficult or impossible. A behavior
+can be due to an obsessive compulsive disorder. Maybe fidgeting or playing with
+their hair is exactly what helps someone focus. It is easy to say "make eye contact",
+it is much more difficult for an introvert than an extrovert. In trying to fix
+a nonverbal cue you might overdo it and create the opposite effect; keeping
+excessive eye contact is creepy and considered aggressive.
+
+An Business Insider [article](https://www.businessinsider.com/horrible-body-language-habits-that-are-hard-to-quit-2016-10) 
+in 2016 listed "9 horrible body language habits that are hard to quit", such as
+
+- fidgeting
+- playing with your hair
+- adopting a defensive pose
+- shuffling instead of walking
+- forgetting to smile
+- slouching
+- nonexisting or aggressive eye contact
+
+For starters, these should not be referred to as "horrible". We all do some of
+these to varying degrees. I slouch and I slouch more when I am tired. There is
+nothing wrong with shuffling while talking at times, it can be used to make a 
+point about a slow-moving process. It can be a problem if that is the only way 
+a speaker moves. The article was met with contemptuous comments such as 
+
+>*"wait you mean..stop being autistic? DIDNT KNOW I COULD DO THAT OH MY GOD!!!!!"*
+
+The important thing is recognizing what can be improved, and working on that.
+With so many poor communicators around, even small improvements can make you
+stand out. Be yourself, but be the best version of yourself,
+
+Whether a behavior can be changed or not, it is helpful to understand how cues
+are typically interpreted and what signals they send.
+
+
+:::{.callout-note title="Personal Experience"}
+A good method to improve nonverbal cues by reinforcing positive and avoiding
+negative nonverbal communication is to record oneself and watching it critically.
+It is also a very painful method. Our voice sounds different in our own head, 
+which is why recordings of ourselves sound strange. "Do I really sound like that?"
+
+Seeing a video of yourself speaking is awkward and cringeworthy. "Is that what
+I sound and look like?". Well, yes, that is what we sound and look like. 
+
+Before giving a speech, I would rehearse at home or in my office several times
+without recording. Then I rehearse once or twice on a stage, recording video and
+audio in front of people that would give me honest and constructive feedback.
+
+The same issues would come up: too much pacing, hands folded in front of the
+body (the "praying" posture), speaking too fast. I am still working on those
+issues. But once aware, I can catch myself pacing or praying during a talk,
+stand still, face the audience and show open palms.
+:::
+
+---
+
+Before going through types of nonverbal cues, watch the following videos. These
+are some of the the world champions in the annual Toastmaster competition. 
+The presentations are short and excellent. Watch how the speakers use gesture, 
+facial expression, body language, movement, pauses, tone of voice, softness and 
+loudness, humor, audience engagement, to tell their story
+
+{{< video https://www.youtube.com/watch?v=OpuMNgxRMac 
+    title="Louisa Montalvo, 2024 World Champion"
+    width="500" height="350" 
+>}}
+
+{{< video https://www.youtube.com/watch?v=bbz2boNSeL0
+    title="Dananjaya Hettiarachchi, 2014 World Champion"
+    width="500" height="350" 
+>}}
+
+
+## Body Language {#sec-nonverbal-bodylanguage}
+
+An **open** body language is inviting, calming, puts us at ease. This is a good
+state of mind to receive information. A **defensive** body language signals
+tension, resistance, and unease. An **aggressive** body language means I am 
+coming for you, it triggers fight and flight response.
+
+Elements of open body language are
+
+- straight posture
+- open arms
+- showing palms of the hands
+- smiling
+- eyebrows open
+- leaning forward
+- making eye contact
+- removing clothing (e.g. jacket, not all of it)
+
+Defensive body language shows in
+
+- crossed legs
+- arms crossed in front of the chest
+- avoiding eye contact
+- hands in pockets
+- clenched fists
+- rigid body
+
+Aggressive body language is seen in 
+
+- clenched fists
+- sneering
+- tight muscles
+- finger pointing
+- hands on hips
+- furrowed brow, eyebrows turned inwards
+- pursed lips
+- puffed chest
+- blading (turning the body slightly away from a threat, as to protect vital organs)
+- jaw thrust forward
+- invading someone's space
+- narrowing eyes
+
+
+### Posture
+
+### Gesture
+
+### Facial Expressions
+
+### Movement
+
+## Voice
+
+### Tone of Voice
+
+### Filler Words
+
+
+
+
+
+
+
+
+

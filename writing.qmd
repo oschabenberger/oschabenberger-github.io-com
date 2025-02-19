@@ -1,0 +1,85 @@
+<style>
+.flushright {
+   text-align: right;
+}
+</style>
+
+# Writing {#sec-writing}
+
+
+<!---
+Google technical writing course: https://developers.google.com/tech-writing
+Duke University scientific writing tutorial: https://sites.duke.edu/scientificwriting/
+
+Ten principles of technical writing: https://www.writerswrite.co.za/ten-principles-of-effective-writing/
+
+--->
+
+
+:::: {.callout-tip title="Quotes"}
+::: {.flushright data-latex=""}
+*Every data scientist is also a writer.*\
+\
+*Writing is thinking.*\
+\
+*Authors may sell their books: but they give themselves away.*\
+F.L. Lucas, Style: the art of writing well.\
+\
+*I didn't have time to write a short letter, so I wrote a long one instead.*\
+Blaise Pascal (often incorrectly attributed to Mark Twain)
+:::
+::::
+
+**Technical writing** is the process of making complex information accessible in
+the form of written material such as documents, reports, press releases, memos, 
+product specifications, instruction manuals, white papers, etc.
+
+
+## Principles of Effective Writing
+
+In his classic book *Style: The Art of Writing Well*, F.L. Lucas lays out a
+number of principles of effective writing [@Lucas_2012]. 
+
+The first foundation of style is **character** or **personality**. The personality
+of the writer shines through in the words and the goal is to inform and move
+the reader. 
+
+>*The fundamental skill in writing is not technique, useful as that may be. The
+fundamental thing is to write with personality, with character. Soul is more 
+than syntax.*
+
+>*Style, I repeat, is a means by which a human being gains contact with others; 
+it is personality clothed in words, character embodied in speech.*
+
+This agrees with Aristotle's ethos appeal in the context of oratory: credibility 
+of the message and credibility of the speaker (writer). 
+
+The next foundational pieces of good writing are **brevity** and **clarity**. 
+Lucas writes
+
+>*Character, I have suggested, is the first thing to think about in style. The
+next step is to consider what characteristics can win a [ ] reader's sympathy.
+For example, it is bad manners to give them needless trouble. Therefore clarity. 
+It is bad manners to waste their time. Therefore brevity.*
+
+The social purpose of language is communication -- to inform, misinform, or
+otherwise influence. Obscurity (the lack of clarity) is an unnecessary evil caused
+by incoherence, overcrowding of ideas, lack of examples, overuse of jargon, 
+sentences built into mazes and labyrinths, overloaded paragraphs, long sentences,
+etc.
+
+In technical writing, clarity takes precedence over all other rules. Sentences
+should be *beautifully clear*.
+
+The end of the paragraph is a place where the reader can rest and collect their
+thoughts. A considerate writer makes those rest places not too rare. If in doubt,
+it is safer to make paragraphs too shirt rather than too long.
+
+How is clarity to be acquired? Mainly by writing to serve people rather than 
+to impress them. Most lack of clarity comes from the ambition to be admired for 
+a depth of sense or wealth of ornament. Use short words, short sentences, and
+paragraphs. Do not try to cram too many things at once. Show empathy for the
+audience and imagine their state of mind---fight the curse of knowledge.
+
+
+

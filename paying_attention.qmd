@@ -1,0 +1,20 @@
+
+```{=html}
+<style>
+.flushright {
+   text-align: right;
+}
+</style>
+```
+
+# Paying Attention {#sec-attention}
+
+
+## Attention to the Environment
+
+
+## Attention to the Audience
+
+
+## Attention to Yourself
+

@@ -1,0 +1,488 @@
+
+```{=html}
+<style>
+.flushright {
+   text-align: right;
+}
+</style>
+```
+
+# Metaphors, Analogies, and Similes {#sec-metaphors}
+
+## What are They?
+
+In the literary sense, a **metaphor** is a figure of speech that **equates** two things: 
+"Time is money" or "All the world is a stage". When 
+one of them is unfamiliar or unknown and the other is familiar and known, a 
+metaphor allows us to understand by making connections. A "self-amplifying event"
+becomes a "chain reaction", describing perfectly what is going on, a series
+of reactions connected to each other, with each link of the chain firing off
+another event.
+
+An **analogy** is similar to a metaphor, it **compares** two things---the unfamiliar
+or unknown concept is like a familiar concept.
+Use this hint to remember the difference between metaphors and analogies:
+"an analogy is like a metaphor". If you want to put a finer point on it, then 
+analogies can be distinguished from **similes**. Both make comparisons via *like* or *as*.
+The goal of the analogy is to provide an explanation, whereas a simile simply says 
+one thing is like another thing. "Life is like a box of chocolate" is a simile.
+
+* **Metaphor**: Time is a thief
+* **Simile**: Time is like a thief
+* **Analogy**: Time is like a thief that steals moments of our lives.
+
+We use *metaphors* in what follows as an umbrella term for all three, with 
+apologies to linguists.
+
+## Why Use Them
+
+Metaphors make your communication more interesting, fun, and relatable---thus
+memorable. They break down barriers and engage the audience. Which of the 
+following two phrases is more engaging and memorable?
+
+::: {.flushright data-latex=""}
+*The analysis of unstructured data collected through social media suggests \
+significant customer interest in the update compared to the previous release.*
+:::
+
+::: {.flushright data-latex=""}
+*A lot of online buzz suggests that customers love the update.*
+:::
+When communicating data science to decision makers, you might be running into
+some resistance. Not everyone has embraced data-based decisioning as the way
+forward. For many executives, this *new* way of thinking is an existential 
+threat to the intuition-based decisioning that has led them to their prestigious
+role. Someone explained the tension around data science this way
+
+>*Data-driven decisioning is considered a threat because based on data and 
+technology you can now make ostensibly better decisions than the folks
+who have been honing their intuition for 25 years. This empowers a new and
+younger generation of decision makers to take a seat at the table; disrupting 
+the established order.*
+
+In one of his blog [posts](https://world.hey.com/jason.parker/metaphor-is-a-great-tool-in-data-science-implementation-a822b621)
+Jason Parker lists these attitudes about predictive models as common 
+challenges to overcome:
+
+* "There's nothing this can tell me that I don't already know."
+* "There's no way that a machine can replace people in making this kind of decision."
+* "We already do a great job with this, there's no need to rock the boat."
+
+The metaphor he uses to connect with the audience is to compare using a 
+predictive model in business with looking at Google Maps to plan a route 
+home from work. We do it not because we are confused about where *Home* is, but
+because the predictive algorithm in Google Maps reliably predicts the shortest 
+route given the current conditions---more so than we can.
+
+Similarly, predictive models are not used to tell executives how to run the 
+business, but help them to realize their business goals most efficiently. 
+The analogy is 
+
+>*Using predictive models is like letting Google suggest a route to a known
+destination. It is the best way to get to where you want to go.*
+
+
+## Careful with Established Metaphors
+
+Some metaphors are well established in data science and have taken their place
+in the vocabulary:
+
+* Data lake
+* Data warehouse
+* Data mining
+* Data ingest
+
+These terms have very precise meaning **and** they serve as metaphors. When using
+"data lake" in a presentation, what do you want to achieve? Are you referring
+to the particular data architecture in the organization as distinct from, say, a
+data warehouse, or do you want the audience to think of data as floating around 
+in a lake? 
+
+In situations where metaphors are well established, make sure the audience knows
+whether you use a technical term or whether you want to draw on the metaphor.
+
+Some metaphors have become so commonplace that they have devolved into 
+boilerplate:
+
+* Big data
+* Data is the new oil (the new gold)
+* Data tsunami
+* Data deluge
+* Data rush
+* Raw data
+
+Different audiences will relate and react to these metaphors differently. As 
+@AwatiShum point out, a marketing professional might look at a tsunami of 
+unstructured data as a valuable resource to be exploited for marketing purposes
+while the IT director is worried about being washed away by the tsunami of data
+stored on the company servers.
+
+## Dangerous Metaphors and Analogies
+
+The desire to express complex and unfamiliar topics in familiar terms takes 
+us too far when metaphors oversimplify or distort. There be dragons.
+
+One of the most controversial analogies in recent data science history is that
+between neural networks and the brain. Now most of us do not understand how 
+brains work but we are familiar with carrying one around. It is ironic to try
+and explain a complex and unfamiliar system---the neural network---with an 
+analogy to another system whose functioning is not (well) understood---the
+human brain.
+
+Some argue that it should be obvious that an artificial neural network (ANN) does not
+work like a brain. The numerous contributions that use the analogy to do away
+with an explanation of the technology by hand-waving suggest otherwise. By 
+calling the units in the hidden layer of an ANN *neurons* and their connections
+*synapses*, comparisons with the brain are invited.
+
+Ever since the analogy between ANN and brain was made, the field had to push
+back against it. A neural network is a piece of software that does not at all 
+look, work, behave, like a wet-substrate organ. Unfortunately, because the 
+connection was made, and because ANNs are foundational technology in AI 
+applications, the hyperbole about the capabilities and effects of AI had free
+reign.
+
+If the brain analogy of neural networks is out, then what other analogies can
+be used to relate such a complex and unfamiliar concept?
+
+>*A neural network is like performing a complex task by enaging thousands or
+millions of partial experts, each solving a tiny subtask, in anticipation that 
+their collective effort does the job.*
+
+>*A neural network is like weaving a garment where the threads are made from 
+data. If the threads or the weaver are not very good you don't want to wear 
+the garment.*
+
+## Analogies for Data Science Concepts
+
+@Behar_etal_2013 list 25 analogies the authors use to teach statistical concepts.
+In this section we draw on some of their analogies, modify and expand on them,
+and add some of our own.
+
+### Sample Size
+
+:::{.callout-note title="The Statistical Concept" collapse=true}
+The appropriate size of a sample is not a function of the size of the population,
+rather it depends on the variability of the population and the desired accuracy
+or power of the statistical methods applied to the sample.
+:::
+
+:::{.callout-tip title="Tasting Soup"}
+Imagine cooking a pot of soup and using a teaspoon to taste the soup. If you 
+are expecting more dinner guests and cook a much bigger pot of soup you would
+not be tasting the soup with a bigger spoon--you would still use a teaspoon.
+:::
+
+
+You can extend this analogy to explain selection bias.
+
+### Selection Bias
+
+:::{.callout-note title="The Statistical Concept" collapse=true}
+Sampling bias--also called **selection bias**---is a form of representation bias 
+where the sampling method is defective and does not represent the target population. 
+A random sample is always representative of the target population but there are 
+many ways in which the selected data can deviate from the properties of a random 
+sample:
+
+- Available data can misrepresent the target population, for example, if medical 
+data is only available for individuals having a condition.
+
+- Random sampling that does not reflect the distribution of groups in the target 
+population, for example, drawing random samples from lists of users 
+(website, mobile phone, phone book, tax records) does not accurately represent 
+the overall population (over-/under-coverage).
+
+- Missing values processes can be related to the objective of the study 
+(non-response bias).
+
+- Participants who exercise control over their inclusion in a 
+study can bias the data (self-selection bias).
+
+- Survivorship bias can occur when the sample focuses on those meeting a 
+selection criterion. For example, studying current companies does not reflect 
+companies that have previously failed.
+
+- Drop-out: when subjects drop out of a long-term study for reasons related to the 
+objective of the study it can bias the results.
+:::
+
+:::{.callout-tip title="Stirring the Pot"}
+Suppose you are tasting soup from a pot that is not well stirred. You might be
+dipping the spoon into an area where salt or spices have accumulated, thus
+not getting a representative taste of the entire soup.
+
+The problem is not addressed by tasting with a bigger spoon (taking a larger
+sample), but by making sure the pot is properly stirred prior to tasting.
+:::
+
+### Confidence Level
+
+:::{.callout-note title="The Statistical Concept" collapse=true}
+The confidence level is the probability associated with a confidence interval.
+A 95\% confidence interval has confidence level 0.95 and it represents the 
+interval that will contain the unknown value of the parameter in 95\% of the
+conceptual repetitions of the experiment. 
+
+If you draw a (single) random sample and calculate the confidence level of a
+parameter based on it, then we do not know whether the parameter will actually
+be covered by the interval we computed. But we know, were we to repeat the 
+sampling over and over again, that 95\% of those intervals will cover the 
+parameter.
+:::
+
+:::{.callout-tip title="The Liar"}
+A 95\% confidence interval is like a person who tells the truth 95\% of the time.
+We do not know whether a particular statement is true or not but in the long
+run, 95\% of their statements will be true.
+:::
+
+### Sample (Study) Size and Treatment Effect
+
+:::{.callout-note title="Statistical Concept" collapse=true}
+A treatment effect of a certain size is more likely detectable as sample size
+increases as this increases the power of the statistical comparison between
+the treatments. This can lead to situations where the sample size is so large
+that treatment differences are detected as significant even though the magnitude
+of those differences is practically irrelevant.
+:::
+
+:::{.callout-tip title="Magnifying Glasses"}
+Suppose you are looking at two animals through a magnifying glass. At low
+magnification you might not be able to tell that one is a dog and one is a cat.
+As the magnification increases, differences between the animals become more 
+apparent. If you look at them under a microscope you will detect minute 
+dissimilarities and always declare them different individuals. If the question 
+is "Are they both dogs?", then you do not need a microscope.
+:::
+
+### Residuals
+
+:::{.callout-note title="The Statistical Concept" collapse=true}
+A residual is typically the difference between an observed value and a predicted
+value under a model; the raw difference is sometimes modified to imbue the residuals
+with particular properties that aid in the diagnostic of model assumptions. 
+A residual should not exhibit systematic effects as the signal, the systematic
+part of the relationship between target and input, should have been removed
+by training a model to the data.
+
+Many loss functions in statistical estimation are functions of residuals.
+:::
+
+:::{.callout-tip title="Taking out the Trash"}
+After reading the newspaper, the pages are thrown into the trash (or are recycled)
+when we have consumed all the necessary information from the paper. It should 
+not contain any valuable information we overlooked to incorporate into our 
+thinking.
+:::
+
+
+### Feature Selection
+
+:::{.callout-note title="The Statistical Concept" collapse=true}
+Models depend on features and we cannot include all possible features into a 
+model. Doing so would make the model too large, unwieldy, impractical, and 
+the model would not generalize well. So we use various techniques to choose 
+subsets of the features (variable selection, Lasso) or use regularization
+techniques that dampen the negative effect of having too many features.
+:::
+
+:::{.callout-tip title="Hiring Consultants"}
+Selecting features in a statistical model is like choosing which consultants to 
+hire in order to solve future business problems. (Bear with me here, I know that some
+will quip that the correct number of consultants to be hired is always zero.)
+
+You cannot afford to hire all consultants, and they would likely trip all over
+each other anyway. So you choose to bring the best two or three you can afford.
+The first consultant you choose should be the one with the broadest knowledge
+base because you cannot know yet what future problems they will need to solve. 
+Suppose that this consultant can handle 65\% of all problems.
+
+Which consultant should you hire next? The one with the second-most breadth in 
+problem solving---say 45\% or the one whose problem-solving ability covers the
+blind spots of the first (is orthogonal to the first consultant)? You are making 
+the company most future-proof by hiring second the consultant who knows most
+about the problems the first consultant does not know anything about.
+:::
+
+### Type-I and Type-II Errors
+
+
+@Feinberg_1971 uses analogies with the judicial process to explain the concepts
+of the Type-I and Type-II errors.
+
+:::{.callout-note title="The Statistical Concept" collapse=true}
+We are testing a hypothesis, called the
+null hypothesis, by gathering data and examining how likely the outcome of the
+experiment is under the hypothesis (if the null hypothesis were true). If the
+outcome is very unlikely under this condition the null hypothesis is rejected---as
+the outcome should not have happened. A Type-I error is the mistake to reject
+a true hypothesis. A Type-II error is to fail to reject in the situation when
+the null hypothesis is not true.
+:::
+
+:::{.callout-tip title="A Court Trial"}
+Consider a trial before court. The hypothesis is that the accused is innocent
+of the charges---following the principle of presumption of innocence: in the
+absence of evidence against, we have to assume that the defendant is innocent.
+
+- A Type-I error is to find a defendant guilty when in fact they are innocent. 
+- A Type-II error occurs if the court fails to declare the
+defendant guilty when they in fact broke the law.
+:::
+
+The analogy can be continued to explain the significance level and the inverse
+relationship between the two error types.
+
+### Significance level
+
+:::{.callout-note title="The Statistical Concept" collapse=true}
+The decision about the validity of a null hypothesis based on statistical 
+analysis rests on estimated quantities that have variability. We cannot say 
+whether a hypothesis is true or false, we can only make statements about the 
+probability of having observed the result we did (or a result more extreme) if
+the hypothesis were true. The probability threshold at which we we are confident 
+to state that a result is unusual enough for the hypothesis to be a viable 
+explanation is the significance level.
+:::
+
+:::{.callout-tip title="Court Trial"}
+In order to convict someone, we need evidence beyond a reasonable doubt to 
+reduce the chance to declare an innocent person guilty (a Type-I error). By
+raising the bar of reasonable doubt for a conviction, we make sure that it is 
+unlikely to convict an innocent person. But at the same time we are increasing
+the chances that a guilty person will go free (a Type-II error). This happens
+when there is evidence against the guilty person but it does not rise to the
+level of beyond reasonable doubt required for a conviction.
+:::
+
+### Regularization
+
+:::{.callout-note title="The Statistical Concept" collapse=true}
+Regularization is a form of shrinkage estimation where a penalty term is added
+to an objective function. The regularization penalty has the effect of introducing
+bias while reducing variability at the same time, leading to smaller mean-squared
+errors compared to unbiased methods. The parameter estimates of regularized models
+are shrunk toward zero---sometimes made exactly zero---which reduces their
+variability.
+:::
+
+:::{.callout-tip title="Wise Teacher"}
+Regularization is like a wise teacher. After you have read many books on a 
+subject, the teacher can tell you which ones matter most and encourage you
+not to take any of the sources too serious.
+:::
+
+### Loss Function
+
+:::{.callout-note title="The Statistical Concept" collapse=true}
+A loss function measures the cost of committing an error in a supervised 
+estimation method, in the sense that the observed and predicted values will
+disagree to some extent. The form of the loss function expresses how we measure
+and value these cost. 
+
+Loss functions are objective functions we try to minimize in statistical 
+estimation.
+:::
+
+:::{.callout-tip title="Teaching"}
+A loss function is like a teacher comparing a student's response to a question
+to the correct answer. The goal is not to get all questions correct by
+remembering the answers, but for the student to learn and gain knowledge that 
+they can apply to find answers to new questions. 
+
+The loss function tells the teacher how far off an individual student is,
+how far off the entire class is, and whether further instruction is needed.
+:::
+
+### Bias-Variance Tradeoff
+
+:::{.callout-note title="The Statistical Concept" collapse=true}
+The contributions to the mean-squared error by a statistical estimator have 
+two sources: the variability of the estimator itself, and its bias, the 
+deviation between the mean of the estimator and the target of estimation.
+The mean-squared error is the sum of the variance and the squared bias.
+
+An estimator can achieve a small mean-squared error by having small variance
+and/or having small bias. In constructing statistical models using supervised 
+learning we balance bias and variance by making sure models do not overfit (low
+bias and high variance) or underfit (high bias and low variance) and by choosing
+appropriate model families and estimation principles.
+:::
+
+:::{.callout-tip title="Return to Office (RTO)"}
+Balancing bias and variance in data science models is like maximizing employee
+productivity by finding the balance between remote working and spending time
+in the office. 
+:::
+
+### Ensemble Method
+
+:::{.callout-note title="The Statistical Concept" collapse=true}
+An ensemble is a collection of weak or strong learning models that produce a
+prediction or classification collectively, usually by some form of averaging
+or majority voting. The combination of base learners improves performance 
+by reducing variability through averaging, or by sequentially improving on
+previous models.
+:::
+
+
+:::{.callout-tip title="Wisdom of Crowds"}
+An ensemble method is like estimating the number of marbles in a jar by relying
+on the wisdom of crowds. Any one person's guess is unreliable, but when you
+average many person's guesses you can estimate the number of marbles well.
+
+No one person has to be an expert at marble guessing for the group to do well.
+:::
+
+
+## Terms with Established Meaning
+
+Another issue to look out for in technical communication are terms that have
+established meaning in everyday language which can be different from their 
+meaning in technical vernacular.
+
+An **error** in everyday English refers to a mistake. In statistics, error has
+multiple meanings: 
+
+* the discrepancy between an observation and a model prediction (*mean-squared 
+error*, *classification error*)
+* the discrepancy between a true value and an observed value (*measurement error*)
+* the amount of loss incurred
+* a probable interval (*margin of error*)
+* a measure of variability (*standard error*)
+* an erroneous decision (*Type-I error*, *Type-II error*)
+
+To statisticians it might be perfectly clear which type of error you are referring
+to. Given the many meanings of the term in statistics, that is not guaranteed.
+Imagine the confusion of a non-technical audience. 
+
+**Significance** in everyday English refers to something important, worthy of
+attention. Statistical significance is a threshold level of probability beyond
+which an assumption (the hypothesis) is deemed unlikely to be true. This threshold
+is not related to practical importance. Non-technical audiences are easily misled
+into thinking that findings matter if they have found to be statistically 
+significant. Better words to use in technical writing are *remarkable*, *important*,
+and *relevant*.
+
+**Correlation** in everyday English refers to the relationship or connection between things.
+In statistical terms, the correlation is a measure of a particular type of 
+relationship between random variables, a linear relationship. Replacing the word
+*correlation* in technical writing with *association* or the generic *relationship*
+is a good idea.
+
+**Independence** in everyday language is a state of freedom, being free of the
+control of others. In statistics and probability, independence is a property
+of the joint distribution of random variables. Two events are stochastically
+independent when the occurrence of one event does not affect the likelihood
+that the other event occurs. In modeling, the term *independent variable* is also
+common, as compared to the *dependent variable*. Independent variables
+are the explanatory variables (predictors, inputs) in a model. The dependent
+variable is the target. The use of the terms *independent variables* and 
+*dependent variable* is particularly confusing to non-technical audiences. 
+
+
+
+
+
+

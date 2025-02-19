@@ -1,0 +1,285 @@
+
+
+```{=html}
+<style>
+.flushright {
+   text-align: right;
+}
+</style>
+```
+
+# Frameworks {#sec-frameworks}
+
+## Problem Analysis {#sec-problem-analysis}
+
+Data scientists are inundated with questions and requests. A director in the
+Finance department shoots you this email in the morning:
+
+::: {.flushright data-latex=""}
+*Has the SaaS business been growing over the past three months\
+and will the trend continue over the next quarter?*
+:::
+
+If this question hits the desk of the data science team, does everyone know what
+needs to be done? Is it clear what the question is? Is there a deeper question
+here that needs to be answered first?
+
+**Framing** of a problem expresses the issue on behalf of those who are
+experiencing it, in a way that the team can develop a shared understanding [@Church2023].
+Without proper framing, the team cannot rally around the problem and develop
+a solution. Well-framed problems are expressed in a meaningful way and set the
+team up for success. Ill-framed problems have the opposite effect.
+
+The question about the growth of the SaaS is not well framed. A better ask would
+have been:
+
+::: {.flushright data-latex=""}
+*Measured by net retention rate (NRR), what is the NRR over the past quarter\
+and can you predict the NRR for the next quarter, assuming that we\
+make no major changes to sales and marketing?*
+:::
+
+Two methodological approaches that help unpack a problem and get to its essence 
+are *The 5-Why* framework and the *40-20-10-5* rule. This is known as 
+**root cause** analysis.
+
+
+### The 5 Whys
+
+This framework was developed in the 1950s at Toyota to improve production 
+quality and is still in use today. It works best for small and simple problems
+but you can try it on any problem. If it turns out that the causes for each
+*Why* create their own lines of inquiry, the *5-Why* tool is too simple.
+
+The idea is to state the problem and then ask repeatedly "Why did this happen?", 
+up to five times. At any point, the *Why* might reveal the root cause of the 
+problem. If it does not, drill deeper and go to the next question (@fig-5-whys).
+
+![The 5-Why framework for root cause analysis.](images/The_5_Whys.png){#fig-5-whys fig-align="center" width=80% .lightbox}
+
+The first *Why* should reveal the main problem, but is not necessarily the
+root cause of the problem. Any of the *Why* can reveal the root cause and
+you do not necessarily have to go down 5-deep.
+
+:::{.example}
+::::{.example-header}
+Problem: The website was not updated in time.
+::::
+::::{.example-container}
+1. Why did this happen?\
+$\Rightarrow$ The developers did not have the content they needed.
+
+2. Why did this happen?\
+$\Rightarrow$ The copywriter did not provide the content.
+
+3. Why did this happen?\
+$\Rightarrow$ The copywriter was waiting on approval from the VP Marketing.
+
+4. Why did this happen?\
+$\Rightarrow$ The VP Marketing forgot to approve the content.
+
+5. Why did this happen?\
+$\Rightarrow$ He was on a business trip.
+
+Possible solutions: 
+
+- Make sure that approval authority is delegated prior to absences from office.
+- Ensure that time for content approval is allocated during absences.
+- Set up an automated approval process that moves a decision to next in line
+if the decision is not made within a certain time frame.
+- Bump the decision to the Senior VP Marketing if the VP does not respond
+within a certain time. Bump the decision then to the Executive VP Marketing
+if the SVP does not respond within a certain time.
+- Replace the VP of Marketing with someone who has better memory.
+::::
+:::
+
+The framework is not useful if the responses are informed by personal biases and 
+do not get to the heart of the issues. Preconceived notions about the causes
+can mislead the analysis as can reliance on guesses or assumptions. 
+Being convinced that one has found *the* root cause can lead to superficial 
+solutions.
+
+:::{.example}
+::::{.example-header}
+Problem: The Application Crashed while Scoring a Model Online
+::::
+::::{.example-container}
+1. Why did this happen?\
+$\Rightarrow$ The code tried to access invalid memory when reading one of the variables
+needed in the scoring model.
+
+2. Why did this happen?\
+$\Rightarrow$ No memory was allocated for the variable, instead, the application
+tried to read from a NULL pointer causing a segmentation violation.
+
+3. Why did this happen?\
+$\Rightarrow$ No information was available for the particular variable, hence no 
+memory was allocated.
+
+4. Why did this happen?\
+$\Rightarrow$ The input form does not require a valid input, the user can leave it blank.
+
+If you stop after the first *Why* the solution is to make sure memory is 
+always valid, implying to allocate memory for all variables and to pre-populate
+it with default values, for example, NULLs or NaNs.
+
+You would still have to make sure that the application can process NULL and NaN 
+values. The same is true if you stop after the second *Why*.
+
+Digging deeper we get to the reason for the absence of data. It seems that if the
+information is required, then the data intake form should make sure that a valid
+value is populated based on user input. The downstream checks for NULL/NaNs and
+sufficient memory allocation are good programming practice anyway but are not 
+solving the root cause of the crash---they are resolving the symptoms of the crash.
+::::
+:::
+
+The 5-Why procedure starts with formulating a short and specific problem or issue
+the team needs to address. It helps to have a facilitator, who is not a team 
+member, to ask "Why did this happen?". The team shoul make effort to confirm 
+their responses with data where possible. You stop asking "Why did this happen?"
+when one of the following occurs:
+
+* There is no new information.
+* You get to the "Aha!" moment when the team realizes the root cause. For example,
+you get to "Oh no, I cannot believe we have been doing it that way all this time!"
+* The reasons are outside the team's control.
+* The responses start to repeat.
+
+
+### The 40-20-10-5 Rule
+
+This rule is related to the 5-why framework in that it is trying to get to the 
+essence of a problem. The approach is different. 
+
+Rather than repeatedly asking 
+why something happened, the 40-20-10-5 rule asks us to reframe the problem using 
+fewer and fewer words. It is not that important whether you start with 40 or 80 words, 
+what matters is to increasingly strip away stuff that does not matter. What you
+are left with is the essence of the problem. The root of the problem emerges
+as the number of words is reduced.
+
+:::{.example}
+::::{.example-header}
+Problem: The Application Crashed while Scoring a Model Online
+::::
+::::{.example-container}
+
+40-words: A segmentation violation occurred when the code scored a data record
+collected online that contained invalid data. Specifically, a NULL pointer 
+was accessed instead of a memory address where memory was allocated to hold 
+the user-supplied value for the variable.
+
+20-words: When the application encounters a NULL pointer it crashes, this can
+be the result of not retrieving data and not setting defaults.
+
+10-words: Missing user input results in memory not being allocated.
+
+5-words: User did not provide data.
+::::
+:::
+
+## SUCCESs---Ideas That Stick {#sec-ideas-stick}
+
+In their book *Made To Stick*, the brothers Chip and Dan Heath ask why some ideas
+stick and others die [@Heath2007]. At the beginning of the book they contrast a 
+passage from a document and a story.
+
+:::{.example}
+::::{.example-header}
+Passage: Community Building
+::::
+::::{.example-container}
+*Comprehensive community building naturally lends itself to a return-on-investment
+rationale that can be modeled, drawing on existing practice. A factor constraining
+the flow of resources to CCIs is that funders must often resort to targeting
+or categorical requirements in grant making to ensure accountability.*
+::::
+:::
+
+---
+
+:::{.example}
+::::{.example-header}
+Story: Kidney Heist (abbreviated)
+::::
+::::{.example-container}
+*Dave is a frequent business traveler. On a recent trip to Atlantic City he had 
+time to kill after meeting with clients and before his flight home. He went to
+a local bar for a drink. He'd just finished one drink when an attractive woman
+approached and asked if she could buy him another. Sure, he said. The woman brought
+two drinks back from the bar, one for her and one for him. Dave took a sip and
+that was the last thing he remembered.*
+
+*He woke up, disoriented, in a hotel bathtub filled with ice. He spotted a note
+along with a cell phone on a small table beside the bathtub: "DON'T MOVE. CALL 911".*
+
+*His fingers numb from the ice, he called 911. The operator seemed oddly
+familiar with his situation. She said "Sir, I want you to reach behind you,
+slowly and carefully. Is there a tube protruding from your lower back?"*
+
+*Sure enough, there was a tube. The operator said "Sir, don't panic, but there
+is a ring of organ thieves operating in this city; they harvested one of your
+kidneys. Paramedics are on their way."*
+::::
+:::
+
+Suppose you had just read those texts for the first time and are asked to 
+retell them tomorrow. Which passage or story would you be more likely to 
+recount? Almost all of us would remember the kidney heist story, including
+many of its details: the bar, the drinks, the woman, the bathtub filled with
+ice water, the 911 operator. And of course, getting your kidney harvested. 
+I say "almost all of us" because some might find the passage on community
+building more memorable---if that is you, then you are a rarity. 
+
+@Heath2007 develop a framework for gauging the stickiness of an idea. A sticky
+idea is one that is understood and remembered, and has a lasting impact by 
+changing the audience's opinions or behavior. The concept of the sticky idea
+translates directly to sticky communication.
+
+In order for an idea to be sticky it does not have to be truthful. The kidney
+heist story is an urban legend. And it is a very sticky story. The story first
+appeared in 1991 and circulated widely for more than a decade, despite being
+debunked. For a fact check of the story and a hint of its possible origin, click 
+[here](https://www.snopes.com/fact-check/youve-got-to-be-kidneying/).
+
+But wait, why do we need a framework for making our communications "stick"? 
+We already know about storytelling principles, we know the goal of the communication,
+and we know the audience. Think of a biology school teacher who knows their audience,
+knows the material (cell mitosis), and is a very effective speaker. All the 
+ingredients for a successful lecture on mitosis are there. The big question is
+about the message. How should the teacher communicate mitosis to the students?
+
+The framework of the Heath brothers is about how to craft the core message and
+it rests on six principles:
+
+1. **Simplicity**. The message must be simple, not in the sense of being dumbed
+down, but in the sense of being stripped down to its core, its essence. 
+
+2. **Unexpectedness**. To maintain audience interest when it takes time to get
+an idea across, we can stoke their curiosity by opening and closing gaps in
+their knowledge. 
+
+3. **Concreteness**. Convey the message in terms of human actions and sensory
+information with concrete images: the bathtub filled with ice. By communicating
+concrete messages, everyone will understand the message the same way.
+
+4. **Credibility**. Sticky ideas carry their own credentials. The audience can 
+*see for themselves* that the message is credible.
+
+5. **Emotions**. To make people care about your idea, make them feel something.
+Tap into what the audience cares about. This might require work finding out
+what exactly your audience does care about. @Heath2007 give the example of 
+teenagers these days not quitting smoking because of health consequences but
+because they resent the duplicity of tobacco companies.
+
+6. **Stories**. Hearing stories prepares us to act on ideas. Stories make 
+the message memorable.
+
+In short, sticky ideas are **S**imple, **U**nexpected, **C**oncrete, 
+**C**redentialed, **E**motional **S**torie**s** (SUCCESs).
+
+
+
+

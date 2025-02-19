@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.552">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Communication in Team-based Data Science - 1&nbsp; Communciation Models</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./comm_types.html" rel="next">
+<link href="./intro.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./comm_models.html">Part I. Science of Communication</a></li><li class="breadcrumb-item"><a href="./comm_models.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Communciation Models</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Communication in Team-based Data Science</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Part I. Science of Communication</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./comm_models.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Communciation Models</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./comm_types.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Communciation Types</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./storytelling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Storytelling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./frameworks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Frameworks</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Part II. Communicating Uncertainty</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Part III. Practice of Communication</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./speaking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Speaking</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./visualizing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Visualizing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./writing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Writing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./nonverbal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Nonverbal Cues</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./presenting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Presenting</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./listening.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Listening</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./paying_attention.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Paying Attention</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./metaphors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Metaphors, Analogies, and Similes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Part IV. Teams</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro_teams.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./meetings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Meetings</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-comm-models-aristotle" id="toc-sec-comm-models-aristotle" class="nav-link active" data-scroll-target="#sec-comm-models-aristotle"><span class="header-section-number">1.1</span> Aristotle and Lasswell</a></li>
+  <li><a href="#forms-of-communication" id="toc-forms-of-communication" class="nav-link" data-scroll-target="#forms-of-communication"><span class="header-section-number">1.2</span> Forms of Communication</a>
+  <ul>
+  <li><a href="#speaking-visualizing-writing" id="toc-speaking-visualizing-writing" class="nav-link" data-scroll-target="#speaking-visualizing-writing">Speaking, Visualizing, Writing</a></li>
+  <li><a href="#sec-theory-nonverbal" id="toc-sec-theory-nonverbal" class="nav-link" data-scroll-target="#sec-theory-nonverbal">Nonverbal Communication</a>
+  <ul class="collapse">
+  <li><a href="#the-7-myth" id="toc-the-7-myth" class="nav-link" data-scroll-target="#the-7-myth">The 7% myth</a></li>
+  <li><a href="#the-first-impression" id="toc-the-first-impression" class="nav-link" data-scroll-target="#the-first-impression">The first impression</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#the-audience" id="toc-the-audience" class="nav-link" data-scroll-target="#the-audience"><span class="header-section-number">1.3</span> The Audience</a></li>
+  <li><a href="#sec-curse-knowledge" id="toc-sec-curse-knowledge" class="nav-link" data-scroll-target="#sec-curse-knowledge"><span class="header-section-number">1.4</span> The Curse of Knowledge</a>
+  <ul>
+  <li><a href="#tappers-and-listeners" id="toc-tappers-and-listeners" class="nav-link" data-scroll-target="#tappers-and-listeners">Tappers and Listeners</a></li>
+  <li><a href="#irl-in-real-life" id="toc-irl-in-real-life" class="nav-link" data-scroll-target="#irl-in-real-life">IRL (In Real Life)</a></li>
+  <li><a href="#what-can-be-done-about-it" id="toc-what-can-be-done-about-it" class="nav-link" data-scroll-target="#what-can-be-done-about-it">What Can Be Done About It?</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./comm_models.html">Part I. Science of Communication</a></li><li class="breadcrumb-item"><a href="./comm_models.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Communciation Models</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-comm-models" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Communciation Models</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="sec-comm-models-aristotle" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="sec-comm-models-aristotle"><span class="header-section-number">1.1</span> Aristotle and Lasswell</h2>
+<p>There is no shortage of theoretical models for how communication takes place. One of the oldest models dates back to the fourth century BC and the Greek philosopher Aristotle . Aristotle studied <strong>rhetoric</strong>, the art of persuasion. What is called the <strong>rhetorical situation</strong> (<a href="#fig-rhet-sit" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>) describes a triangle between communicator (speaker), audience, and a subject that is conveyed.</p>
+<div id="fig-rhet-sit" class="lightbox quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rhet-sit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/RhetoricalSituation.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1"><img src="images/RhetoricalSituation.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rhet-sit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: Aristotle’s rhetorical situation
+</figcaption>
+</figure>
+</div>
+<p>In modern times, the rhetorical situation was enhanced and embellished by acknowledging that the context in which the communication takes place also matters. But the basic structure remains the same: someone wants to persuade an audience with information (a subject).</p>
+<p>A model with a linear structure that conveys related ideas is due to political scientist Harold Lasswell, who published a simple communication model in 1948 (<a href="#fig-lasswell" class="quarto-xref">Figure&nbsp;<span>1.2</span></a>). The Lasswell model simply asks the question <em>Who Says What in What Channel to Whom and to What Effect?</em></p>
+<div id="fig-lasswell" class="lightbox quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lasswell-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/LasswellModel.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2"><img src="images/LasswellModel.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lasswell-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.2: Lasswell’s model of communication
+</figcaption>
+</figure>
+</div>
+<p>Each question in the Lasswell model is assigned to its own field of inquiry. For example, the question <em>In What Channel?</em> is the topic of media analysis, the question <em>Says What?</em> is the topic of content analysis. Critics of the Lasswell model cite the lack of context, and the linear structure that does not accommodate feedback. Like Aristotle’s model, it is simple enough for us to make progress with a theoretical understanding of communication without getting bogged down in the minutiae.</p>
+<p>The triangle in Aristotle’s rhetorical situation is accompanied by the rhetorical triangle in <a href="#fig-rhet-triangle" class="quarto-xref">Figure&nbsp;<span>1.3</span></a>. In order to be persuasive, communication must have the three <strong>appeals</strong> in the figure. <strong>Logos</strong> appeals through facts and logical arguments, <strong>ethos</strong> through character and credibility of the speaker, and <strong>pathos</strong> appeals through emotions. <span class="citation" data-cites="KuchelRowland">Kuchel and Rowland (<a href="references.html#ref-KuchelRowland" role="doc-biblioref">2023</a>)</span> refers to the logos approach as “aiming for the head, not the heart” and the pathos approach as “aiming for the heart, not the head”.</p>
+<div id="fig-rhet-triangle" class="lightbox quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rhet-triangle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/RhetoricalTriangle.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3"><img src="images/RhetoricalTriangle.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rhet-triangle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.3: Aristotle’s rhetorical triangle
+</figcaption>
+</figure>
+</div>
+<p>Effective communication does not necessarily have the three appeals in equal measure, but it has elements of all three appeals in some measure. We are not being influenced by a message if the information or the communicator lacks credibility. Unless we care about the subject and are willing to get emotionally engaged, the information falls flat. And information that does not make any sense is unlikely to be persuasive.</p>
+<p>In technical fields we tend to pay too much attention to Logos, thinking (or hoping) that information presented with logically sound arguments will automatically stick and persuade. We have all come to know the dry and boring technical presentations delivered without passion and emotional appeal. Double-whammy if the presenter does not have or does not establish credibility of the information or themselves and delivers without personality. Attending a scientific conference one could conclude that this style of presentation is so common; it is almost to be expected. it does not have to be this way.</p>
+<p>Communicating too much information that the audience cannot process and communicating too little information to make it worthwhile for the audience to pay attention ends up having the same effect: confusion (<a href="#fig-info-confusion" class="quarto-xref">Figure&nbsp;<span>1.4</span></a>).</p>
+<div id="fig-info-confusion" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-info-confusion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/InfovsConfusion.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-info-confusion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.4: Finding the right amount of information.
+</figcaption>
+</figure>
+</div>
+<div class="example">
+<div class="example-header">
+<p>Example: Boring Presentation</p>
+</div>
+<div class="example-container">
+<p>Watch the following 3:28 minute video on presentation principles keeping in mind the rhetorical triangle and the Lasswell model of communication.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/dyTIGqvngMs" title="Boring Presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<ul>
+<li><p>Is the information presented logically sound?</p></li>
+<li><p>Is the presenter and the information credible?</p></li>
+<li><p>Are you emotionally engaged as a viewer?</p></li>
+</ul>
+<p>Can you answer the questions in the Lasswell model: <em>Who says what in what channel to whom to what effect?</em></p>
+<p>For the 3 1/2 minutes you spent with the video, did you get too little or too much information about presentation principles?</p>
+<p>How could the information be communicated more persuasively?</p>
+</div>
+</div>
+<p>Speakers that are passionate about the subject are engaging and are more authentic and believable compared to the dry, dispassionate communicator. A passionate communicator makes themselves vulnerable by conveying their love for the subject. This opening-up signal is received by the audience which in turn is allowed to open up. The vulnerability loop, as it is called, is an effective tool to make connections and build trust—it presses emotional buttons. So do joy and laughing.</p>
+<p>Emotional connections are powerful. As an example, take the following communication by actor and comedian Jim Gaffigan. He repeats the same tweet (<a href="#fig-gaffigan-tweet" class="quarto-xref">Figure&nbsp;<span>1.5</span></a>) on every anniversary of 9/11.</p>
+<div id="fig-gaffigan-tweet" class="lightbox quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gaffigan-tweet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/JimGaffigan9_11_tweet.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4"><img src="images/JimGaffigan9_11_tweet.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gaffigan-tweet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.5: Emotional connection through someone else’s voice.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="forms-of-communication" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="forms-of-communication"><span class="header-section-number">1.2</span> Forms of Communication</h2>
+<p>Formally, we distinguish the following forms of communication:</p>
+<ul>
+<li><strong>Verbal</strong>. Communicating through words, mostly spoken words (oral communication)</li>
+<li><strong>Visual</strong>. Involves the use of graphics, signs, video, and so on.</li>
+<li><strong>Written</strong>. Conveying information in written form, whether it is an email, letter, memo, contract, report, or text message. It is a form of verbal communication because writing uses words.</li>
+<li><strong>Nonverbal</strong>. Communication without words, using body language, facial expression, nonverbal cues, and so on.</li>
+</ul>
+<p>We’d like to add another form of inter-personal communication that is often overlooked and plays a critical role in today’s society:</p>
+<ul>
+<li><strong>Listening</strong>. In particular active listening with focus on the other person and intent to understand what they are trying to convey.</li>
+</ul>
+<section id="speaking-visualizing-writing" class="level3">
+<h3 class="anchored" data-anchor-id="speaking-visualizing-writing">Speaking, Visualizing, Writing</h3>
+<p>Imagine giving a presentation in a conference room to a group of business leaders. You are presenting for the data science team the results of the latest A/B test experiments on website designs. The presentation will likely draw on several communication modes: you speak words, use visual aids to support your points and to provide context, and written information the audience reads.</p>
+<p>Speaking, drawing (visualizing), and writing are the activities associated with verbal, visual, and written forms of communication. A presentation is a combination of these basic communication activities.</p>
+<p>Some principles of communication, such as the rhetorical triangle, or the recommendation to strive for character, brevity, clarity, and honesty, apply to all modes and forms of communication. They also have their specific principles and challenges. Separate chapters in Part III, <em>Practice of Communication</em>, are dedicated to speaking, visualization (drawing), and writing. Here, we explore their relative importance in communicating content.</p>
+<p>All humans and human groups have language itself or the capacity for language. The time when language developed varies by source but we can roughly say that we communicated with language and diversified language about 100,000 years ago. This is significant because it predates other modes of communication by tens of thousands of years</p>
+<div id="fig-cave-story" class="lightbox quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cave-story-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/Cavemen_storytelling.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-glightbox="description: .lightbox-desc-5"><img src="images/Cavemen_storytelling.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cave-story-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.6: Storytelling around camp fire. Source: Stability AI (DreamStudio)
+</figcaption>
+</figure>
+</div>
+<p>After the invention of language, the next significant innovation in communication was drawing. The first graphical depictions found in caves date back to about 64,000 years ago. The first figurative cave drawing depicting a bovine was dated to about 40,000 years ago. In addition to transferring knowledge through oratory we now used imagery to tell a story (<a href="#fig-cave-drawing" class="quarto-xref">Figure&nbsp;<span>1.7</span></a>).</p>
+<div id="fig-cave-drawing" class="lightbox quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cave-drawing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/CaveDrawing.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" data-glightbox="description: .lightbox-desc-6"><img src="images/CaveDrawing.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cave-drawing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.7: Cave drawings. Source: <a href="https://www.britannica.com/art/cave-art#/media/1/100613/113927">Encyclopaedia Britannica</a>
+</figcaption>
+</figure>
+</div>
+<p>It took more than 35,000 years after that for the first writing to appear. One of the oldest known writings is Sumerian cuneiform in the Kish tablet from about 3,500 BC (<a href="#fig-kish-tablet" class="quarto-xref">Figure&nbsp;<span>1.8</span></a>). The tablet depicts hands and feet, but also numbers. The pictography in early form of text shows its evolution as a communication tool from drawing.</p>
+<div id="fig-kish-tablet" class="lightbox quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-kish-tablet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/Tableta_con_trillo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" data-glightbox="description: .lightbox-desc-7"><img src="images/Tableta_con_trillo.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-kish-tablet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.8: The Kish Tablet. Source: <a href="https://en.wikipedia.org/wiki/History_of_writing">Wikipedia</a>
+</figcaption>
+</figure>
+</div>
+<p>Among the more recent inventions in communication are newspapers, blogs, vlogs, images, video, audio, text messages, email, Slack, and social media posts. And let us not forget 1987: the first release of Microsoft PowerPoint. “Yes, and proud we are of all of them” (The Big Lebowski).</p>
+<p>Why bother with all that in the context of team-based data science communication?</p>
+<p>Our brains are most wired for earlier forms of communication and least wired for more recent forms. The most effective way of communicating is by telling a story, as if you were sitting around a campfire, with the audience focused entirely on the speaker. It is unlikely that you will communicate data science ideas sitting around a fire—kudos if that happens to you and also, um, get a life. However, by applying principles of storytelling, knowledge transfer to the audience is much more effective. These principles can be brought to bear whether you deliver an extemporaneous speech, write an email to a collaborator, or produce a visual essay.</p>
+<hr>
+<p>After speaking, the second most effective means of communication is visually. Graphics, plots, and drawings are never <em>the</em> story themselves, but they help you get the story across. Memorable communication supports spoken words with visual appeal.</p>
+<p>Less effective in presentations are written words. Although we have trained ourselves to consume information by reading, in the throws of a presentation we are more likely to connect with information we hear and see, than information we read.</p>
+<p>The Greek philosopher Plato, a student of Socrates and a teacher of Aristotle, felt strongly about the power of oratory. In <em>Phaedrus</em>, Plato presents through a dialog between his teacher Socrates and Phaedrus. His Socrates says</p>
+<blockquote class="blockquote">
+<p><em>he who has knowledge of the just and the good and beautiful […] will not, when in earnest, write them in ink, sowing them through a pen with words, which cannot defend themselves by argument and cannot teach the truth effectually</em></p>
+</blockquote>
+<p>and</p>
+<blockquote class="blockquote">
+<p><em>You know, Phaedrus, that is the strange thing about writing, which makes it truly correspond to painting. The painter’s products stand before us as though they were alive. But if you question them, they maintain a most majestic silence. It is the same with written words. They seem to talk to you as though they were intelligent, but if you ask them anything about what they say from a desire to be instructed they go on telling just the same thing forever.</em></p>
+</blockquote>
+</section>
+<section id="sec-theory-nonverbal" class="level3">
+<h3 class="anchored" data-anchor-id="sec-theory-nonverbal">Nonverbal Communication</h3>
+<p>Nonverbal communication are the ways in which we convey messages and information by other means than speaking, visualizing, or writing. Examples of nonverbal cues in communication include body language, facial expression, clothing, posture, eye contact, touch, loudness and tone of voice, use of space, movement, and nonverbal vocalizations such as sighing, scoffing, laughing, crying.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Personal Experience">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Personal Experience
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>One of the executives on the leadership team was known for their excessive nonverbal contributions to meetings. While others were speaking, he would shake his head, sigh, fidget uncomfortably in the chair, frown, scowl, scoff, and laugh under their breath. The nonverbal cues were meant to draw attention away from whoever was speaking, to associate their contributions with negative emotions, and to show disapproval.</p>
+<p>The popularity of the executive, which was not stellar to begin with, suffered greatly from the nonverbal behavior. The support from the rest of the leadership team eroded, which reduced the executive’s effectiveness in the role. The rest, as they say, is history.</p>
+</div>
+</div>
+<section id="the-7-myth" class="level4">
+<h4 class="anchored" data-anchor-id="the-7-myth">The 7% myth</h4>
+<p>When forms of communication are discussed, you will encounter the percentages 55, 38, and 7%. These refer to the importance of nonverbal body language (55%), tone of voice (38%), and the actual words spoken (7%). Since tone of voice is also nonverbal, these percentages would suggest that more than 90% of communication is nonverbal. Can this be true?</p>
+<p>Think of reading the text of the Gettysburg address or Dr.&nbsp;Martin Luther King’s “I have a Dream” speech. Would we really grasp only 7% of what the authors meant if we have access to the words only?</p>
+<p>Yes, nonverbal communication is important—extremely important, and its impact is often under-estimated. The problem with the 55/38/7 numbers is that they apply to a specific experiment and situation, when the verbal and nonverbal channels <strong>do not match</strong>. If the attitude of the words we are speaking and the attitude we communicate through body language do not match, then the postural component dominates the attitude that is inferred. In other words, if your nonverbal communication contradicts the message, the contradiction will win out.</p>
+<p>When someone yells “I am fine” while writhing in pain on the ground with a broken bone sticking out of their leg, we believe the nonverbal part of the communication. They are not fine.</p>
+<p>The takeaways:</p>
+<ul>
+<li>Giving nonverbal cues that contradict the message will derail your communication.</li>
+<li>Nonverbal communication that supports the message is very important, but it does not carry 90% of the weight.</li>
+</ul>
+<p>Here is an entertaining video about the importance of nonverbal communication. Unfortunately, Dr.&nbsp;York perpetuates the myth that only 7% of communication is carried by the words we say.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/QOkrS1v7Ywk" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="the-first-impression" class="level4">
+<h4 class="anchored" data-anchor-id="the-first-impression">The first impression</h4>
+<p>Thin-slicing is a term from psychology to describe finding patterns and shaping opinions based on a small amount of information, a thin slice of the possibly available information. Research has shown that we are surprisingly good at thin-slicing, the attitudes formed based on small amounts of information are often similar to those formed based on having access to more information.</p>
+<p>Thin-slicing occurs when we first meet someone. We initially form opinions about them, taking a quick snapshot of who we think they are. In a study of TED talks, discussed <a href="https://blog.ted.com/body-language-survey-points-to-5-nonverbal-features-that-make-ted-talks-take-off/">here</a>, the authors investigated what makes some TED talks go viral while others get many fewer views. After all, TED talks in general are great talks, with interesting content delivered well rehearsed by credible speakers.</p>
+<p>The research showed that we are thin-slicing speakers almost immediately based on nonverbal cues. Are they credible and competent? Are they charismatic? Are they friendly? The sobering result is that opinions about the speaker, and by extension about the talk, were formed largely during the first seven seconds. To test the result, the study compared the ratings of audiences who watched only the first seven seconds of the talk and those who watched the full talk. Which speakers and talks the audiences overall liked and disliked matched. As soon as the person takes the stage we thin-slide and form an opinion “I think I am going to like this talk”.</p>
+<p>Here are a few other fascinating results from the study of TED talks:</p>
+<ol type="1">
+<li><p><strong>It’s not what you say, it’s how you say it</strong>. Audiences who watched the speakers on mute rated the talks almost exactly with respect to overall rating, speaker intelligence, charisma, and credibility as audiences who watched the talk with sound</p></li>
+<li><p><strong>More hand gestures is better</strong>. The popularity of the talk increased with the number of hand gestures a speaker makes.</p></li>
+<li><p><strong>Scripts kill your charisma</strong>”. Talks are rated higher when the speaker shows more vocal variability. Working with scripts or teleprompters works against variety in vocal impressions. Also, ad-libbing is rated higher than staying on script.</p></li>
+<li><p><strong>Smiling makes you look smarter</strong>. The more speakers smiled, the higher their perceived intelligence rating.</p></li>
+</ol>
+<p>More on the Do’s and Do Not’s of nonverbal cues in practicing communication in <a href="nonverbal.html" class="quarto-xref"><span>Chapter 8</span></a>.</p>
+</section>
+</section>
+</section>
+<section id="the-audience" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="the-audience"><span class="header-section-number">1.3</span> The Audience</h2>
+<p>Confronted with communication the audience has three choices: ignore it, engage with it, or respond to it <span class="citation" data-cites="Longnecker">(<a href="references.html#ref-Longnecker" role="doc-biblioref">Longnecker 2023</a>)</span>. Being ignored is not what you are after when communicating. To increase engagement and response, you must consider the audience. Who are you communicating to? What are their background, circumstances and motivation? What is their interest level? Why would they care?</p>
+<p>All audiences are comprised of individuals and it helps to imagine what the average audience member is like as well as the variability among them. The checklist in <span class="citation" data-cites="Longnecker">Longnecker (<a href="references.html#ref-Longnecker" role="doc-biblioref">2023</a>)</span> includes asking yourself the following questions about audience members</p>
+<ul>
+<li>What are their relevant values and beliefs?</li>
+<li>Do they have existing awareness and attitudes about the topic?</li>
+<li>Will they be receptive to the information?</li>
+<li>What is their knowledge about the topic?</li>
+<li>Will they have the skills, resources, and support to act upon the information?</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Personal Experience">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Personal Experience
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>As chief technology officer (CTO) of a technology company I was often asked about emerging technologies and what they meant for our business, for our customers, or for society in general. Cognitive computing, deep learning, internet of things, artificial intelligence, blockchain, quantum computing, NoSQL databases are some of the topics I had to speak to.</p>
+<p>When preparing for those conversations it was helpful to imagine four archetypes of audience members:</p>
+<ol type="1">
+<li><p><strong>My mother</strong>. How would you explain the topic to someone with limited technical knowledge—sorry, mom. The goal of the communication is to convey the basics of the technology and anchor it correctly to her view of the world.</p></li>
+<li><p><strong>A media reporter</strong>. Charged with having to produce material on the topic, I want to inform them and convey a position if necessary. There is limited opportunity to ask questions, for example to establish their knowledge level, and limited time of engagement. What is the quotable sentence that they will write down, record, and reproduce?</p></li>
+<li><p><strong>An industry analyst</strong>. These folks tend to have (strong) opinions on everything although they have limited time to learn and grasp new technologies. Tech evolves more quickly for anyone to become expert on all aspects of the technology in a given field. If the analyst has already formed an opinion about a tech topic I want to convey my view and establish how they differ or agree—and why.</p></li>
+<li><p><strong>A technical expert</strong>. Talking to someone who knows much more about the topic than myself, I want the time they spend with me on the subject to be valuable to both sides. The goal is to learn something and at the same time not to waste their time. Communication has to establish for the benefit of the expert the depth of my understanding so they can build on that foundation.</p></li>
+</ol>
+</div>
+</div>
+<div class="example">
+<div class="example-header">
+<p>Example: Blockchain Technology</p>
+</div>
+<div class="example-container">
+<ol type="1">
+<li><p>Blockchain is a type of database technology that allows the secure sharing of information, for example financial transactions.</p></li>
+<li><p>Blockchain is essentially an append-only ledger that is made secure by distributing copies of the ledger across a network. This makes it difficult to tamper with the information as one would have to modify all copies of the ledger. Blockchain is not an application, but can be the backbone of the next generation of applications on the internet.</p></li>
+<li><p>We can view blockchain as another form of distributed database technology, but that would not do justice to most distributed databases. As an append-only system it is fairly simple. The more important question in my opinion is which applications will be built on blockchain technology. As in other areas such as the Internet of Things (IoT), it is rather difficult to replace incumbent approaches that are only somewhat broken. I expect blockchain technology to be most successful in new application areas where safe, distributed transactions are key. For example, rather than replacing the SWIFT international payment system, blockchain can help build systems for micropayments for online content creators.</p></li>
+<li><p>My motivation to examine blockchain technology is from the standpoint of building applications for cryptographically safe transactions. While the distributed nature of the chain helps to provide security, I am wondering whether that feature inhibits applications where transaction speed is also essential. I am curious about your views on tradeoffs with blockchain technology.</p></li>
+</ol>
+</div>
+</div>
+<p>There are other ways to categorize audiences that can be helpful in tailoring communication. For example, by their interest level.</p>
+<ul>
+<li><p><strong>Interested and appreciative</strong>. An easy audience to communicate to; the members are motivated and often self-selected. Giving a talk at a scientific conference to like-minded “birds of a feather” or hanging out with other data scientists is where you can find such an audience.</p></li>
+<li><p><strong>Uninterested</strong>. You need to motivate the audience in order to engage with your communication. What is in it for them, how can you make the information relevant for them?</p></li>
+<li><p><strong>Skeptical or polarized</strong>. Imagine giving a talk about climate change, immigration, or vaccination to a randomly chosen audience. The audience members will typically be interested in the topic but with firmly held beliefs. What are the barriers that need to be overcome to perceive information that might be at odds with their beliefs? Successful communication aligns with the values of the audience. In audiences that are misaligned with the communicator or that exhibit diversity in values and beliefs, communication is more challenging. Mindful communication that considers different perspectives is more effective than patronizing communication.</p></li>
+</ul>
+</section>
+<section id="sec-curse-knowledge" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="sec-curse-knowledge"><span class="header-section-number">1.4</span> The Curse of Knowledge</h2>
+<section id="tappers-and-listeners" class="level3">
+<h3 class="anchored" data-anchor-id="tappers-and-listeners">Tappers and Listeners</h3>
+<p><span class="citation" data-cites="Heath2007">Heath and Heath (<a href="references.html#ref-Heath2007" role="doc-biblioref">2007</a>)</span> describe an experiment at Stanford University in the 1990s by Ph.D. student Elizabeth Newton where subjects were assigned to two roles. A <strong>tapper</strong> was asked to chose a song from a list of well-known tunes—think “Star Spangled Banner” or Happy Birthday to You”. They then tapped the rhythm of the tune to a <strong>listener</strong> who had to guess the song based on the rhythm.</p>
+<p>It turns out that listeners guessed correctly only 3 of 120 tapped songs, a paltry 2.5% success rate. Yet when the tappers were asked to predict the chance that listeners would identify the tune, they guessed a 50% success rate.</p>
+<p>This phenomenon is known as the <strong>curse of knowledge</strong> or the <strong>expert’s curse</strong>.</p>
+<p>A knowledgeable person has a difficult time to reconstruct what a person lacking that knowledge would think. If you are better informed, it is difficult to correctly anticipate the judgement of lesser informed people. The tappers had knowledge of the song they were tapping out, literally having it play in their head. Knowing what the outcome of the experiment ought to be—I am tapping “Happy Birthday to You”—made the outcome in the tapper’s mind more predictable than it actually was. The poor listeners did not have access to that information and had to reconstruct the tune from only the rhythmic tapping.</p>
+<p>We have a strong tendency to unknowingly assume that others know what we know or that it would be easier to learn it than it actually is or that others can learn concepts in the same way that the concepts make sense to us now.</p>
+</section>
+<section id="irl-in-real-life" class="level3">
+<h3 class="anchored" data-anchor-id="irl-in-real-life">IRL (In Real Life)</h3>
+<p>This experiment plays out in real life millions of times every day.</p>
+<p>When a university professor teaches expectations of random variables they do it armed with the knowledge of hundreds of applications and mathematical tricks an experienced statistician brings to bear. That is the tune in their head; they cannot imagine the state of their own mind before they first learned about expected values. The curse of knowledge is also at play when you ask a teacher whether the students are learning. The way the teacher conveys material, based on already knowing it, may not be best for those who lack the teacher’s knowledge.</p>
+<p>When a software engineer writes documentation for the features of the latest product release, they are equipped with deep inside knowledge about the software. They have a difficult time imagining what it is like for a user to experience the software for the first time. Software user interfaces that are intuitive to the engineer who developed it but are counterintuitive and complicated for everyone else are an example where the curse of knowledge clouds the judgment.</p>
+<p>A company executive cannot unlearn what they know about the nature and conventions of the business. When crafting communications to employees they cannot imagine what it is like not knowing the ins and outs of market capitalization or maximizing shareholder value.</p>
+<p>A data scientist presents to company executives the result of developing over the last three months a new customer churn model based on data collected from the nascent SaaS (Software as a Service) business of the company. The data scientist knows the ins and outs of the data used for model development as well as the pros and cons of the considered models. Because the various models had tradeoffs the ultimate churn prediction is based on a heterogeneous ensemble of models from four families. In the presentation the data scientist assumes that the executives are familiar with customer data from SaaS business because he is very familiar with it. The executives cannot relate to the input or output of the work and cancel the project.</p>
+<p>Using statistical jargon that the audience is unfamiliar with is another example of the curse of knowledge. Can you imagine how a brain processes the information that is not trained in significance levels, learning rates, or cross-entropy loss?</p>
+<p>Knowing your audience means putting yourself into the frame of mind of someone without the expert knowledge you bring to the conversation. In order to be effective at transferring knowledge, you need to know what the vessel you are transferring knowledge into looks like.</p>
+</section>
+<section id="what-can-be-done-about-it" class="level3">
+<h3 class="anchored" data-anchor-id="what-can-be-done-about-it">What Can Be Done About It?</h3>
+<p>How can we alleviate the effects of the curse of knowledge?</p>
+<p>The first piece of advice is to have <strong>empathy</strong> for your audience but that is easier said than done. Empathy is often described as “walking in someone else’s shoes”, “seeing the world through someone else’s eyes”. As Brené Brown instructs, you cannot put on some magic glasses and lens the world through someone else’s eyes. You cannot walk in someone else’s shoes. Empathy means to acknowledge that someone has <strong>different</strong> experiences and views from yours. Rather than trying to walk in someone else’s shoes, empathy is about acknowledging that those shoes exists—and that they do not fit your feet.</p>
+<p>Fighting the curse of knowledge through empathy is a great start. While it is valuable to acknowledge that the less knowledgeable state of mind is different from ours, we are limited by not being very good at figuring out what exactly the less knowledgeable state of mind looks like—in the audience and in ourselves.</p>
+<p>As communicators we also need to have <strong>empathy for ourselves</strong>, as we were in the less knowledgeable state before we became experts at the topic we are communicating. Unfortunately, we are also not good in empathizing with our past selves in less knowledgeable states. This inability stems from being anchored in a state of mind full of hindsight created by the receipt of knowledge <span class="citation" data-cites="Fischhoff">(<a href="references.html#ref-Fischhoff" role="doc-biblioref">Fischhoff 1975</a>)</span>.</p>
+<p>In preparing material, ask for <strong>feedback</strong>. What resonated with the audience? What did they not understand? Reread your own material after some time. If it is not clear what you meant by something or why you wrote a passage the way you did, how can you assume that the audience will understand what you meant?</p>
+<p>Software engineers experience this phenomenon the hard way when they do not document code when they write it. At the time, it is perfectly clear to them how the code works and why it is written the way it is. Six months removed from it they wonder what in the world this code is supposed to do, how it works, and who wrote it.</p>
+<p>The next piece of advice to defeat the curse of knowledge is to use <strong>concrete and relatable language</strong> to describe complex things. Avoid abstract language and jargon. Use analogies (something is like something else, “life is like a box of chocolates”) and metaphors (compare two things directly, “time is money”) to communicate complex topics. Metaphors and analogies make the unfamiliar seem familiar, they ease the audience into a topic, break down barriers, and provide a comforting baseline understanding.</p>
+<p>Rather than trying to figure out what you meant by <em>random error</em>, referring to <em>noise in the system</em> allows the audience to connect a statistical concept to real-life concept and to follow along. <strong>Unstructured data</strong> can turn into <strong>doctor’s notes</strong> or <strong>online buzz</strong>. <strong>Nonlinear optimization</strong> can become <strong>finding</strong>, a <strong>neural network</strong> is <strong>somewhat brain-like</strong>. For more practical advice on using metaphors and analogies, see <a href="metaphors.html" class="quarto-xref"><span>Chapter 12</span></a>.</p>
+
+
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;1.1: Aristotle’s rhetorical situation</span>
+<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;1.2: Lasswell’s model of communication</span>
+<span class="glightbox-desc lightbox-desc-3">Figure&nbsp;1.3: Aristotle’s rhetorical triangle</span>
+<span class="glightbox-desc lightbox-desc-4">Figure&nbsp;1.5: Emotional connection through someone else’s voice.</span>
+<span class="glightbox-desc lightbox-desc-5">Figure&nbsp;1.6: Storytelling around camp fire. Source: Stability AI (DreamStudio)</span>
+<span class="glightbox-desc lightbox-desc-6">Figure&nbsp;1.7: Cave drawings. Source: <a href="https://www.britannica.com/art/cave-art#/media/1/100613/113927">Encyclopaedia Britannica</a></span>
+<span class="glightbox-desc lightbox-desc-7">Figure&nbsp;1.8: The Kish Tablet. Source: <a href="https://en.wikipedia.org/wiki/History_of_writing">Wikipedia</a></span>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Fischhoff" class="csl-entry" role="listitem">
+Fischhoff, Baruch. 1975. <span>“Hindsight Is Not Equal to Foresight: The Effect of Outcome Knowledge on Judgment Under Uncertainty.”</span> <em>Journal of Experimental Psychology: Human Perception and Performance</em> 1: 288--299.
+</div>
+<div id="ref-Heath2007" class="csl-entry" role="listitem">
+Heath, Chip, and Dan Heath. 2007. <em>Made to Stick. Why Some Ideas Survive and Others Die</em>. Random House, New York.
+</div>
+<div id="ref-KuchelRowland" class="csl-entry" role="listitem">
+Kuchel, Louise, and Susan Rowland. 2023. <span>“Rhetoric, Influence, and Persuasion.”</span> In <em>Teaching Science Students to Communicate: A Practical Guide</em>, edited by Louise Kuchel and Susan Rowland, 11–19. Springer Verlag, New York.
+</div>
+<div id="ref-Longnecker" class="csl-entry" role="listitem">
+Longnecker, Nancy. 2023. <span>“Good Science Communication Considers the Audience.”</span> In <em>Teaching Science Students to Communicate: A Practical Guide</em>, edited by Louise Kuchel and Susan Rowland, 21–30. Springer Verlag, New York.
+</div>
+</div>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./comm_types.html" class="pagination-link" aria-label="Communciation Types">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Communciation Types</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Commnunication in Data Science by Oliver Schabenberger</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","closeEffect":"zoom","loop":false,"selector":".lightbox"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -1,0 +1,65 @@
+project:
+  type: book
+  output-dir: docs
+  
+book:
+  title: "Communication in Team-based Data Science"
+  subtitle: "Beyond the Numbers"
+  author: "Oliver Schabenberger"
+  date: "9/04/2024"
+  reader-mode: true
+
+  page-footer:
+    left: |
+      Commnunication in Data Science by Oliver Schabenberger
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+  cover-image: cover.png
+
+  chapters:
+    - index.qmd  # the preface
+    - intro.qmd
+
+    - part: "Part I. Science of Communication"
+      chapters:
+        - comm_models.qmd
+        - comm_types.qmd
+        - storytelling.qmd
+        - frameworks.qmd
+    
+    - part: "Part II. Communicating Uncertainty"
+
+    - part: "Part III. Practice of Communication"
+      chapters:
+        - speaking.qmd
+        - visualizing.qmd
+        - writing.qmd
+        - nonverbal.qmd
+        - presenting.qmd
+        - listening.qmd
+        - paying_attention.qmd
+        - metaphors.qmd
+    
+    - part: "Part IV. Teams"
+      chapters:
+        - intro_teams.qmd
+        - meetings.qmd
+       
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+        light: [cosmo,customstyle.scss]
+        dark: [slate,customstyle.scss]
+    smooth-scroll: true
+    number-sections: true
+    number-depth: 2
+    toc-depth: 4
+    toc-expand: 2
+    pdf:
+    documentclass: scrreprt
+
+# editor: visual

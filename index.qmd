@@ -1,0 +1,168 @@
+# Preface {.unnumbered}
+
+
+## Hard Skills and Soft Skills
+
+We like to divide people's abilities to apply knowledge into **hard** and **soft**
+skills. 
+
+The former are the things related to a particular subject matter domain,
+the technical skills you need to do the job. A statistician needs to be skilled 
+in mathematics and probability. A carpenter needs to be skilled at turning
+plans into structures using woodworking tools. A front-end programmer
+needs to be skilled at building web sites and user interfaces. These are the skills
+you learn when you study a subject.
+
+Soft skills, on the other hand, appear to refer to character and personality traits, 
+the things that motivate us to behave a certain way. Any list of soft skills 
+lists items such as problem solving, time management, empathy, work ethic,
+adaptability, and leadership skills. And the one *soft* skill that is on every list: 
+**communication**.
+
+I do not subscribe to this categorization of skills in two buckets, for a number
+of reasons.
+
+* Soft skills are not really *soft*. This **is** the hard stuff. Ask folks what they
+are struggling with. Ask employers about skills most lacking in new employees. 
+They will cite communication, time management, problem solving, teamwork, and so on. 
+Public speaking is among the greatest phobias, ranking ahead of zombies and spiders. 
+25\% of Americans say that they prefer to avoid speaking in front of people.
+
+* To describe soft skills as character traits suggests that they are innate---you 
+either are a good communicator or you are not. You either are a leader or you
+are not. You can manage your time or you cannot. That is simply not true. These are
+skills---just that. You can study them, learn them and get better at them. 
+
+* Education is focused on technical skills and domain expertise. It is difficult
+enough to convey those skills in the time available in any educational program.
+Most educators would prefer to teach material from their area of expertise. In 
+technical fields, educators teach technical stuff. Most educators agree that we
+need to convey more than technical information.
+
+---
+
+If soft skills are important, you are somehow supposed to learn them along
+the way---by some form of osmosis. Having a class schedule with homework and exams 
+*might* improve your time management skills. Participating in experiential learning 
+activities *might* improve your problem solving skills. Presenting research at 
+conferences *might* improve your communication skills. After attending many 
+conferences and scientific talks, I am convinced that repetition alone does not 
+elevate the quality of scientific presentations.
+
+When it comes to communication and operating in a team-based data science environment, 
+we favor a different approach. You can be a good data scientist without strong 
+communication skills. But you cannot be a great data scientist without. You can
+be a good data scientist working by yourself, but you cannot be a great data
+scientist without understanding team dynamics and being a leader and/or 
+contributor to teams.
+
+We treat these skills not as soft, but as **human skills** necessary to do the
+job you are training for well. It is a topic that requires systematic study
+and practice. It has to be a formal part of the data science curriculum.
+
+## Communication in Data Science
+
+Why is it so important to have excellent communication skills in data science?
+
+* Data science is a **team sport**. Even if you are the only data scientist in your
+organization, you are connecting and collaborating with people from other units.
+Communication facilitates effective collaboration.
+
+* Our **subject is technical** and inherently difficult to understand. Data science
+requires technical knowledge in statistics, mathematics, and programming. Those
+are nerdy subjects full of technical jargon. The audience of data science is 
+mostly non-technical and quick to remind you that those were their least favorite
+subjects in school or college.
+
+* A data science project involves **translation**: a business problem, research, or 
+policy **question** is translated into an application involving data. If the project
+is successful, the assets produced by the data science team are translated into
+a business, research, or policy **solution** and hopefully implemented. You need to 
+be able to converse in multiple languages: the language of the client, the language
+of the data, the language of the IT department, the language of the business,
+and so on.
+
+* Decision makers turn to data science for **data-driven decisions**. The decision
+rules and criteria applied during the core data science investigation and at
+the business or executive level are very different. How does a small $p$-value for an 
+input variable in a marketing lead scoring model translate into whether the 
+sales revenue will increase in the next quarter? In order to influence and effect
+change, the audience needs to comprehend the impact of your work in their decision
+framework.
+
+* **Data literacy**, the ability to understand and communicate data, is not as 
+developed as we would like. Numbers and figures have an air of authority and can 
+bring about a suspension of critical thinking. The data scientist should increase
+data literacy by improving interpretation, understanding, and thinking about 
+data.
+
+* Our subject is **uncertainty**. Data is inherently uncertain and statistical assets
+are uncertain as a result. The models we develop are useful abstractions and
+not foolproof. Predictions can be off, classifications can be incorrect. 
+Communicating about an uncertain subject in certain terms is difficult.
+
+--- 
+
+A great data scientist is a leader because they influence and inspire. Leadership
+does not come automatically with title and you do not need a title to be a leader.
+In the spirit of Simon Sinek, if you raise your shield to protect the person
+to your right and the person to your left, you are a leader. If you inspire others and 
+influence their thinking and actions, you are a leader. You do not have to be
+in the role of decision maker to be a leader. It is the human skills such as connection, 
+communication, empathy, and emotional intelligence that give you the power to 
+transcend rank and to inspire and influence.
+
+@Church2023 summarizes as follows
+
+>*By communicating effectively, data scientists can ensure that their work aligns
+with business goals, that they are working on the most impactful problems, that 
+they collaborate successfully with others, that they present results and insights 
+effectively, and that they ultimately influence decisions and actions.*
+
+
+## A Personal Account
+
+My personal post-graduate career progression took me from being a professor and academician
+to a role as a software developer, to a technical leader, an R\&D leader, an
+R\&D executive, to an operating company executive. As a software developer I was a 
+member of a team of 5--10 people and worked with about 60 folks across other teams.
+As a technical leader, R\&D leader, and executive I was responsible first for a team of 5, 
+then 30, then 90, then 2,500, then 10,000+. 
+
+Over thirty years working in different roles, very different skill sets were 
+called upon. Looking back, the need to effectively communicate was a constant
+while the mode and style of communication changed with the size and type of the 
+audience and the position.
+
+Realizing the importance of communication and growing that skill was one of the
+most important and most rewarding lifelong learning lessons.
+
+
+
+
+
+## General Notes
+
+* Communicating uncertainty
+    * Gaps between model output and decision input
+    
+    
+* Participating and leading interdisciplinary teams
+    * How do you do collaborative work?
+    
+    
+* Patterns and templates
+    * What are the steps you go through in a regression, in a classification
+    model?
+    
+* Critical appraisal of information
+    * Ignorance: the absence of relevant knowledge
+    * Misinformation: processing false or inaccurate information as if it was valid
+    * Disinformation: deliberately misinforming, intentionally misleading. Disinformation
+    is the intentional form of misinformation.
+    
+    The "bullshit asymmetry principle": the amount of information needed to refute 
+    bullshit is an order of magnitude greater than to produce it
+    (https://x.com/ziobrando/status/289635060758507521)
+    
+  

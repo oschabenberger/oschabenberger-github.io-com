@@ -1,0 +1,7 @@
+<style>
+.flushright {
+   text-align: right;
+}
+</style>
+
+# Visualizing {#sec-visualizing}

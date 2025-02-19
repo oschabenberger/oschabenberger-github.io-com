@@ -1,0 +1,294 @@
+<style>
+.flushright {
+   text-align: right;
+}
+</style>
+
+# Listening {#sec-listening}
+
+<!---
+https://drexel.edu/graduatecollege/professional-development/blog/2019/August/tips-for-better-active-listening/
+
+https://arootah.com/blog/professional-development/communication-influence/5-types-of-listening/
+--->
+
+
+::: {.callout-tip title="Quotes"}
+:::: {.flushright data-latex=""}
+*I remind myself every morning: \
+Nothing I say this day will teach me anything.\
+So if I'm going to learn, I must do it by listening.*\
+Larry King\
+\
+*Hearing is listening to what is said. Listening is hearing what isn't said.*\
+Simon Sinek\
+\
+*Knowledge speaks, but wisdom listens.*\
+Jimi Hendrix
+::::
+:::
+
+What does it mean to be truly listening? We hear the words but do we understand
+what the other person is trying to say? Maybe we don't even hear the words and
+are present in body only.
+
+Listening is a skill. While most of us have the ability to hear, there are many
+different types of listeners and ways to listen. To be effective as a professional,
+to become a true leader, to be the person others are drawn to, to be able
+to make decisions based on information, we have to recognize the different types 
+of listening and strive to become better listeners.
+
+@Ueland writes
+
+>*We should all know this: that listening, not talking, is the gifted and
+great role, and the imaginative role. And the true listener is much more
+believed, magnetic than the talker, and he is more effective and learns more
+and does more good. And so try listening. Listen to your wife, your husband,
+your father, your mother, your children, your friends, to those who love you
+and those who don’t, to those who bore you, to your enemies. It will work a
+small miracle. And perhaps a great one.*
+
+Listening is not just for the benefit of the recipient or the sender of a message,
+it is important for the story itself. 
+
+@ChristianGriffiths describe a study at the University of Victoria that investigated 
+what happened when the listener to a personal story got distracted. The question was not whether
+the listener's comprehension of the story was impacted by the distraction, but 
+what would happen to the *story* itself. With poor feedback, they discovered, 
+the story falls apart. Narrators who talked to distracted listeners told their 
+stories more poorly, in particular near the dramatic conclusion. The story endings 
+were choppy, abrupt, or circular, retelling the ending more than once. 
+
+@ChristianGriffiths conclude 
+
+>*In fact, it’s now clear that the cause and effect are often the reverse: a poor listener destroys the tale.*
+
+This phenomenon is due to **backchanneling**, the person speaking is receiving
+queues and short messages from the listener without losing ones turn to speak. A nod,
+"uh-uh", eye contact, are such backchannel communications. A distracted listener
+also backchannels by looking at their phone, having side conversations, eyes
+drifting away, etc. If your talk falls flat, you can now blame the audience's 
+backchanneling.
+
+## Types of Listening
+
+### Discriminative Listening
+
+We are born with this listening skill. It allows us to determine intent of what
+is said without understanding the words. Listening to a conversation in a foreign
+language exercises our discriminative listening skills. Tone, volume, inflection
+of voice, along with nonverbal cues such as body language and facial expression
+help us make sense of what we hear.
+
+Developing discriminative listening skills helps you read the room and read
+between the lines.
+
+Suppose I ask a student after lecture whether it was a good one. One student
+shifts nervously in their chair, looks at the floor, says "Yes" in a soft voice, 
+and then eyes the door. What they are really saying is "Um, not so much. I am trying 
+to get out of here." Another student makes eye contact, eyebrows raised, smiles,
+and says with a firm voice "Absolutely." 
+
+### Informational Listening
+
+You engage in this form of listening in the process of learning. The conversation
+is not so much a two-way exchange, but a teacher delivering information that 
+you want to learn. You are highly engaged to understand the concepts and need to
+apply critical thinking. Having empathy for the speaker is not as important;
+you are interested in getting the content, not the emotional context behind the
+content.
+
+### Passive Listening
+
+If you are a passive listener, you hear the words and maybe recognize the
+main points, but little gets through to you. You are present in the conversation
+in body only, nodding along, giving the appearance of being engaged.
+
+Passive listening is disrespectful and counterproductive. It is also incredibly
+common. The passive listener cannot wait for the conversation to be over and
+make their escape.
+
+### Selective (Biased) Listening
+
+A selective listener pays attention only to what they want to hear, filtering
+out everything else. Their attitudes have been settled and they are not open
+to views that are unaligned with their own. A biased listener is not in tune 
+with what the speaker wishes to communicate. If the other person claims that 
+you are not getting their point, you might be a selective listener.
+
+
+:::{.callout-note title="Personal Experience"}
+During a semi-annual performance review, I was meeting 1:1 with each employee
+to discuss the last six months, review their self assessment, the 360-degree 
+assessment from their peers, and my assessment as supervisor. Then we
+would discuss areas of focus for the near future.
+
+When reviewing an employees' accomplishments there were 20+ things they excelled 
+at. They hit it out of the park. There was one area where they could improve.
+
+The one/only thing the employee took away from the conversation was that they
+needed to improve. They entered the performance conversation anxious and stressed,
+filtering out any of the positive comments, looking only for negative information.
+
+In this case the selective listener paid attention only to what they did not
+want to hear, the comments perceived as negative.
+:::
+
+### Attentive Listening
+
+The attentive listener pays attention to every word. They are able to repeat back
+to you everything that was said. But they might not have truly understood it,
+focusing too much on the literal words to miss the underlying meaning, emotions,
+and message.
+
+### Active Listening
+
+An active listener is a participant in the conversation. They pay attention to
+what is being said and engage with the message. An active listener responds
+when it is their time to speak, asks questions, and offers insight. Whether they
+agree or disagree with the speaker, they are receptive to their words.
+
+Active listening creates a positive, productive environment for relationships 
+to grow in. Being present, offering affirmation in body language and our words, 
+mirroring or paraphrasing, and showing curiosity through thoughtful questions 
+is empowering and validating to the listener. 
+
+We learn a lot more by active listening than listening for one's turn to speak.
+
+### "Waiting to Speak" Listening
+
+The opposite of active listening is listening for one's turn to speak. The listener
+already knows what they are going to say, they are just looking for an opportunity
+to inject it into the conversation. This listener is focused on their own point 
+and not on the speaker's perspective. 
+
+The toxic form of *waiting to speak* is to interrupt the speaker
+to make one's point. With or without interruption, waiting to speak makes the
+speaker feel unheard, it is disrespectful. Practicing it with interruption ramps
+up the rudeness score.
+
+Waiting-to-speak listening is very common. Studies have shown that it takes the
+human brain about 0.6 seconds to formulate a response to information. Analyzing
+many conversations it was found that the average gap between people talking was
+0.2 seconds. This is only possible if the response is ready before the other
+person is done talking.
+
+
+### Empathetic Listening
+
+The empathetic listener is an active listener; they are paying attention to the
+emotions behind the words. What is the speaker truly trying to tell me? By 
+bringing empathy to the conversation, the listener recognizes that the speaker
+has a unique viewpoint and unique experiences that are justified and that inform
+the meaning of the message.
+
+### Critical Listening
+
+Critical listening takes place when you need to analyze complex information and
+analyze possible solutions to problems. During critical thinking you evaluate
+what is being said and compare the information to the big picture and everything
+you know.
+
+### Tips to Improve Active Listening Skills
+
+
+#### Eye contact
+
+Face the speaker and make eye contact, but without staring. Too much eye contact
+can be intimidating and aggressive. Try breaking eye contact every few seconds,
+looking to the right or left of the speaker. Looking down can seem like you 
+want to end the conversation.
+
+#### Posture
+
+Make sure your posture is open, not defensive (crossed arms or legs) or 
+aggressive, see @sec-nonverbal-bodylanguage. Leaning forward shows you are 
+attentive, leaning into the conversation.
+
+#### Nonverbal cues
+
+Look for ("listen to") nonverbal signals from the speaker, body language, 
+gestures, tone of voice.
+
+#### Do not interrupt
+
+Interrupting someone signals that you cannot wait for them to finish what 
+they are trying to say, that their contribution is not important, and what
+you have to say is more important. Let the other person finish. 
+
+Pauses are very effective; you do not have to jump right in after someone
+finishes, it gives you time to process, and often the speaker will continue. You
+might be surprised what will be said next---the best part is yet to come.
+
+#### Do not try to solve a problem
+
+Listening is often about just listening. The conversation is not necessarily
+about you finding a solution for something or someone. The process of articulating
+what is on our mind often helps us to find a solution ourselves.
+
+:::{.callout-note title="Personal Experience"}
+I worked closely for many years with a brilliant, albeit quirky, software engineer.
+We developed a lot of code together. At night or over the weekend I would have 
+an idea and the next day would walk into his office to present it. He would 
+actively listen and in the process of saying things out loud I would realize that
+what I thought was a brilliant idea was completely nonsense and unworkable.
+
+If it had not been for the opportunity to bounce off ideas, I would have stormed
+into implementing dead end solutions for hours or days.
+:::
+
+If you believe you have a solution, ask first if they want to hear it.
+
+#### Keep focus
+
+If you are struggling to stay focused on the conversation, try to repeat or 
+paraphrase what you heard. You can first do that in your own head. You can also
+check in explicitly with the speaker and paraphrase what you just heard. It gives
+them an opportunity to let you know whether the conversation is on target and
+it lets them know that they are being heard.
+
+A good way of paraphrasing is to start a sentence with "What I am hearing is..."
+or "It sounds like you are saying ..." or "Tell me if I have this right, ....".
+
+Do not look at your watch. If the conversation has to stay within a time limit,
+set a timer that allows you to wrap up the conversation. Let the speaker know 
+that you are using a timer because you cannot afford to go over and you also
+want to make sure that you have a chance to fully listen and respond if necessary.
+
+#### Do not judge
+
+Actively focus on listening what is being said. Do not react emotionally or try 
+to anticipate what will be said next. Reserve judgment and do not jump to 
+conclusions.
+
+#### Remove distractions
+
+You can make it a point to remove distractions, such as visibly silencing and 
+putting away your phone at the beginning of the conversation or shutting off a 
+computer screen. 
+
+Nothing says "I do not have time for this" and "This is not important" than 
+constantly glancing at a phone or screen.
+
+:::{.callout-note title="Personal Experience"}
+An executive I worked with had a habit of placing his phone in plain sight during video
+calls. Rather than muting the phone he jumped at the opportunity to let the 
+phone interrupt the meeting, take a call or respond to a text message with camera 
+on and audio muted.
+
+It was the perfect instrument to tell everyone in the video meeting that they 
+do not matter and that pretty much everything else is more important.
+:::
+
+#### Remove barriers
+
+Active listening is more difficult if you are separated by a massive desk or
+conference table. Office desks tend to be imposing barriers, exaggerated by
+monitors, phones, trophies, family pictures, piles of paperwork, and whatever 
+else adorns them. The person in front of the desk and behind the desk do not come 
+to the conversation as equals---just compare their chairs.
+
+If you have the opportunity, move the conversation to a smaller table where 
+speaker and listener sit as equals.
+
+

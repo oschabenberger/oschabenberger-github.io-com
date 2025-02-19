@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.552">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Communication in Team-based Data Science - 3&nbsp; Storytelling</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./frameworks.html" rel="next">
+<link href="./comm_types.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./comm_models.html">Part I. Science of Communication</a></li><li class="breadcrumb-item"><a href="./storytelling.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Storytelling</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Communication in Team-based Data Science</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Part I. Science of Communication</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./comm_models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Communciation Models</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./comm_types.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Communciation Types</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./storytelling.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Storytelling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./frameworks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Frameworks</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Part II. Communicating Uncertainty</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Part III. Practice of Communication</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./speaking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Speaking</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./visualizing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Visualizing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./writing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Writing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./nonverbal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Nonverbal Cues</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./presenting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Presenting</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./listening.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Listening</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./paying_attention.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Paying Attention</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./metaphors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Metaphors, Analogies, and Similes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Part IV. Teams</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro_teams.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./meetings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Meetings</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#what-is-a-story" id="toc-what-is-a-story" class="nav-link active" data-scroll-target="#what-is-a-story"><span class="header-section-number">3.1</span> What is a Story</a></li>
+  <li><a href="#why-are-stories-effective" id="toc-why-are-stories-effective" class="nav-link" data-scroll-target="#why-are-stories-effective"><span class="header-section-number">3.2</span> Why are Stories Effective</a></li>
+  <li><a href="#data-storytelling" id="toc-data-storytelling" class="nav-link" data-scroll-target="#data-storytelling"><span class="header-section-number">3.3</span> Data Storytelling</a>
+  <ul>
+  <li><a href="#visual-essays" id="toc-visual-essays" class="nav-link" data-scroll-target="#visual-essays">Visual Essays</a></li>
+  <li><a href="#telling-stories-about-data-science" id="toc-telling-stories-about-data-science" class="nav-link" data-scroll-target="#telling-stories-about-data-science">Telling Stories about Data (Science)</a>
+  <ul class="collapse">
+  <li><a href="#comnbine-visuals-and-language" id="toc-comnbine-visuals-and-language" class="nav-link" data-scroll-target="#comnbine-visuals-and-language">Comnbine visuals and language</a></li>
+  <li><a href="#focus-on-the-audience" id="toc-focus-on-the-audience" class="nav-link" data-scroll-target="#focus-on-the-audience">Focus on the audience</a></li>
+  <li><a href="#create-engagement" id="toc-create-engagement" class="nav-link" data-scroll-target="#create-engagement">Create engagement</a></li>
+  <li><a href="#story-helpers" id="toc-story-helpers" class="nav-link" data-scroll-target="#story-helpers">Story helpers</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./comm_models.html">Part I. Science of Communication</a></li><li class="breadcrumb-item"><a href="./storytelling.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Storytelling</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-story-telling" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Storytelling</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+.flushright {
+   text-align: right;
+}
+</style>
+<div class="callout callout-style-default callout-tip callout-titled" title="Quote">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Quote
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="flushright">
+<p><em>When communication in data science works, we call it data storytelling.</em></p>
+</div>
+</div>
+</div>
+<section id="what-is-a-story" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="what-is-a-story"><span class="header-section-number">3.1</span> What is a Story</h2>
+<p>Everybody wants to be a <em>storyteller</em>. I admit that NBC’s <a href="https://www.nbc.com/the-voice">The Voice</a> is one of my favorite shows on TV. When the judges respond to a contestant’s performance they are often praised as <em>storytellers</em>.</p>
+<p>Telling stories is widely accepted as the most effective, persuasive, and influential form of communication. Stories help us learn and remember by connecting us emotionally to the narrative.</p>
+<p>What is a story, what is storytelling, and why is it effective?</p>
+<p>A story is a narrative with a beginning, a middle, and an end. This is also described with the <strong>ABT</strong> formula in <span class="citation" data-cites="Oliver">Oliver (<a href="references.html#ref-Oliver" role="doc-biblioref">2023</a>)</span>:</p>
+<ul>
+<li><strong>A</strong>, the beginning: “<em>And</em> this is the way things were”</li>
+<li><strong>B</strong>, the middle: “<em>But</em> there was a problem”</li>
+<li><strong>T</strong>, the end: “<em>Therefore</em> this is how it resolved”</li>
+</ul>
+<p>In addition to the ABT story arc, a story has</p>
+<ul>
+<li>one or more <strong>characters</strong> to engage with</li>
+<li>a <strong>place and time</strong> we are transported to</li>
+<li>a <strong>plot</strong> (what, when, where, why, to whom is this happening)</li>
+<li>a <strong>conflict</strong> and a <strong>transformation</strong> through conflict</li>
+<li>a <strong>resolution</strong></li>
+</ul>
+<p>Many data scientists believe in the old adage that</p>
+<blockquote class="blockquote">
+<p>A picture is worth a thousand words.</p>
+</blockquote>
+<p>and, as a result, assume that presentations high on visual content will automatically resonate with the audience. Not so. While visual aids are often more effective than text, tables, and bullet points, by themselves they are not sufficient to create memorable content. And, it often does not take 1,000 words to communicate something. Fewer words, carefully chosen, can create memorable content because they tell great stories.</p>
+<p>In fact, you might not need many words at all to tell a great story. Check out <a href="https://guns.periscopic.com/?year=2018">this</a> <strong>visual essay</strong> about gun deaths in the U.S. in 2018. It has many of the ingredients of a great story. Can you identify beginning, middle, end, characters, place, time, plot, and conflict?</p>
+<p>The elements of a story listed above are the ingredients for your recipe. Just like visualizations by themselves are not stories, using the ingredients does not guarantee a well-told story. Having ingredients does not imply a well-cooked meal. The tools of storytelling are not the same as the art of storytelling.</p>
+</section>
+<section id="why-are-stories-effective" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="why-are-stories-effective"><span class="header-section-number">3.2</span> Why are Stories Effective</h2>
+<p>We have seen in <a href="comm_models.html" class="quarto-xref"><span>Chapter 1</span></a> that Aristotle said effective oratory has three appeals, logos (the logical arguments, the facts), ethos (the credibility), and pathos (eliciting an emotional response). The human brain processes information through emotions, information is meaningful when it evokes emotion. Storytelling connects us emotionally to the narrative; that is why it is so effective.</p>
+<p>As social animals we tend to adopt the positions of those to whom we have a strong social connection. Endorsing the position reinforces the connection to others with whom we share important commitments.</p>
+<p>In his brilliant TEDx talk about the magical science of storytelling, David JD Phillips asks</p>
+<blockquote class="blockquote">
+<p><em>How is it possible for you to be so easily tricked by something so simple as a story?</em></p>
+</blockquote>
+<p>Watch for yourself:</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Nj-hdQMa3uA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>To summarize the content of the TEDx talk:</p>
+<p>We started developing language about 100,000 years ago, long before we invented cave paintings (~27,000 years ago), text (~3,500 years ago), or PowerPoint (1987). Our brains are wired to transferring knowledge through storytelling more than any other format.</p>
+<p>David Phillips describes the “angels’ cocktail” of three hormones that are induced into our brains through (effective) storytelling:</p>
+<ul>
+<li><p><strong>Dopamine</strong>. Dopamine is also called the “feel-good hormone”, it is involved in motivation and deciding whether to engage. Higher levels of dopamine increase focus, attention, creativity, and memory. You increase dopamine in your audience by creating <strong>suspense</strong> in your story, making the audience wait and expect. When we are waiting and anticipating, we are paying attention.</p></li>
+<li><p><strong>Oxytocin</strong>. Oxytocin is also called the “love hormone”, it is produced when we form relationships and during sexual activity. The effects of greater oxytocin level is to bond, trust, and to become more generous. It makes us feel more human and more relaxed. In storytelling you increase oxytocin in the audience by creating <strong>empathy</strong> in the characters. E</p></li>
+<li><p><strong>Endorphins</strong>. Endorphins have the effect of relieving pain, reducing stress and anxiety, and make us feel good. An effective way to create endorphins is to make people <strong>laugh</strong>. They become more focused, relaxed, and creative.</p></li>
+</ul>
+<p>Brain researchers describe a mind meld between teller and listener during storytelling. It is not as if the two brains act as one, but more like the brain activity patterns seen in the storyteller are mirrored in the listener, whether there is one listener or many. And the more similar the brain patterns are, the better the transfer of memories.</p>
+<p>In telling the stories in the TEDx talk, Phillips combines the <strong>tools</strong> and <strong>ingredients</strong> of storytelling with the <strong>art</strong> of storytelling to connect with the audience.</p>
+</section>
+<section id="data-storytelling" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="data-storytelling"><span class="header-section-number">3.3</span> Data Storytelling</h2>
+<p>How does the neuroscience of storytelling, the dramatic arc and storytelling principles such as place and time, characters, conflict, transformation, and resolution map to communication about data? Do I need to weave all this around the pie chart I need to talk about?</p>
+<p>There are two important variations of data storytelling for us:</p>
+<ul>
+<li><p><strong>Storytelling with Data</strong>. Here we use data to craft a compelling narrative. When journalists do this it is called data journalism. You also encounter the term visual essays.</p></li>
+<li><p><strong>Storytelling about Data</strong>. Here we use storytelling principles to create a compelling story about the results of data science.</p></li>
+</ul>
+<section id="visual-essays" class="level3">
+<h3 class="anchored" data-anchor-id="visual-essays">Visual Essays</h3>
+<p>Here are some great examples of data journalism and visual essays, using data to tell a powerful story.</p>
+<p>The next three examples are curated by the company <a href="https://shorthand.com/">Shorthand</a> which develops tools for data storytelling. (Scroll down in the browser to unfold the stories).</p>
+<ol type="1">
+<li><p><a href="https://news.sky.com/story/better-for-brexit-how-uk-has-changed-since-leave-vote-11920143">Brexit by the Numbers</a>. A Sky News story of the immediate impact of Brexit on the UK.</p></li>
+<li><p>The <a href="https://stories.oxfamireland.org/impact/index.html">annual impact report</a> of Oxfam Ireland, a world-wide development organization fighting against inequality, poverty, and injustice.</p></li>
+<li><p>The Arab News story about <a href="https://www.arabnews.com/JewsOfLebanon">Jews of Lebanon</a>, using simple graphics to tell the story of a minority community.</p></li>
+</ol>
+<p>As you scroll through these publications, ask yourself</p>
+<ul>
+<li>What do these presentations have in common?</li>
+<li>Why is a particular presentation effective or ineffective?</li>
+<li>Which graphical elements are being used?</li>
+<li>Can you identify components of the dramatic arc and storytelling principles?</li>
+</ul>
+<p>For twenty great examples of visual essays and visual storytelling, check out <a href="https://www.juiceanalytics.com/writing/20-best-data-storytelling-examples">this</a> collection.</p>
+<p>A particularly powerful–in my opinion–data story is being told with a single graph style in <a href="https://guns.periscopic.com/?year=2018">this</a> story about gun deaths in the U.S. It was introduced earlier in the chapter. If you revisit the visual essay now, can you also identify the emotional appeals of the story and how it helps you connect to the material?</p>
+</section>
+<section id="telling-stories-about-data-science" class="level3">
+<h3 class="anchored" data-anchor-id="telling-stories-about-data-science">Telling Stories about Data (Science)</h3>
+<!---
+Drawing on this online course
+https://www.linkedin.com/learning/learning-data-science-tell-stories-with-data
+--->
+<section id="comnbine-visuals-and-language" class="level4">
+<h4 class="anchored" data-anchor-id="comnbine-visuals-and-language">Comnbine visuals and language</h4>
+<p>Recall that our brains are most wired to knowledge transfer through language, followed second by knowledge transfer through images. Combining visualization with language allows you to craft compelling stories that unlock the meaning of what you wish to convey.</p>
+<p>Beautiful graphics are an element of a data story, but cannot by themselves provide the context in which the meaning is unlocked. They are part of the story. The production value of graphics and slides does not translate to a good story in itself.</p>
+<p>You are using language and visualizations to make connections. What you say and what you show are not the story in itself. The audience will not remember the particular graphic. The audience will not remember the layout of the slides. But they will remember the characters in your story.</p>
+</section>
+<section id="focus-on-the-audience" class="level4">
+<h4 class="anchored" data-anchor-id="focus-on-the-audience">Focus on the audience</h4>
+<p>This is trivial but it bears repeating. You are presenting material for the benefit of the audience, not for the benefit of the data science team. Go back and read that sentence again.</p>
+<p>Everything you do should be focused on how to connect with the audience and make them memorize the meaning of your content. So you do not talk about the data science team and its accomplishments. It is not about you, it is about them! You talk about what the material you present means for them.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Credits">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Credits
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It is OK to acknowledge the team at the end of the presentation, possibly in appendix material that is shared with the presentation but not displayed in the room.</p>
+<p>Pay attention to how many presentations start with “This is Me”, “This is Who we Are”, “This is What we Do”, “These are our collaborators”. You do not ever want to take credit for things you or the team did not do and you do not ever want to take credit away from others. The beginning of the presentation is not where you do that, however.</p>
+<p>The counter argument that is sometimes made is that the audience has a limited attention span and putting credits and acknowledgements at the end buries them. By the time you get there the audience is exhausted and that misrepresents the team’s hard work and accomplishments. Also, if you run long you might not get to that part of the presentation.</p>
+<p>Two responses to this counter argument:</p>
+<ol type="1">
+<li><p>The value of the work and the accomplishments of the team need to be evident from the content you are presenting.</p></li>
+<li><p>If you are not getting through the material you need to work on the presentation. Not getting to material is the wrong kind of cliffhanger for the audience.</p></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="create-engagement" class="level4">
+<h4 class="anchored" data-anchor-id="create-engagement">Create engagement</h4>
+<p>The modern office or classroom environment is not at all like sitting around a campfire at night. There are glass walls, people moving around, a clock in the corner of the room, HVAC systems going on and off, distractions from devices. On the plus side, you are not worried about being distracted by a saber-toothed tiger.</p>
+<p>Starting a presentation by talking about process and methods, and introducing the team is a good way to lose the audience early on. You will have to fight against the current to re-engage them. Remember the <strong>ABT</strong> formula:</p>
+<ul>
+<li><strong>And</strong> this is the way things were</li>
+<li><strong>But</strong> there was a problem</li>
+<li><strong>Therefore</strong> this is how it resolved</li>
+</ul>
+<p>Get right into it.</p>
+<p>To draw the audience in, use relatable experiences and frame them in the language of “you” and “yours”. Stimulate curiosity by raising an open question or mentioning a surprise result. Instead of opening with a slide titled “Fourth Quarter Cloud Expense Forecast” consider opening with these statements:</p>
+<blockquote class="blockquote">
+<p><em>A look at our recent data suggested costs would increase. But did they?</em></p>
+</blockquote>
+<blockquote class="blockquote">
+<p><em>Do cloud expenses really affect the bottom line?</em></p>
+</blockquote>
+<blockquote class="blockquote">
+<p><em>Do the data support the conventional wisdom of subscription model vs pay as you go?</em></p>
+</blockquote>
+<blockquote class="blockquote">
+<p><em>When I saw the data I was reminded that I never again want to wait in line</em></p>
+</blockquote>
+<p>When sharing your own experiences, you are drawing on yourself as an example. Avoid oversharing and just talking about yourself.</p>
+<p>The audience will be drawn to you if you are passionate and having fun working on this problem. It engages their curiosity, wondering what it is about this topic that makes you so passionate. The interest in the topic rubs up on the audience. Avoid any extremes. If you are too serious or dispassionate the audience might perceive that there might be deep-rooted issues with the material. If you are goofy or joke too much you will be seen as not serious and lacking credibility.</p>
+</section>
+<section id="story-helpers" class="level4">
+<h4 class="anchored" data-anchor-id="story-helpers">Story helpers</h4>
+<p>How do you go from having the statement</p>
+<blockquote class="blockquote">
+<p><em>We are predicting a 7% increase in revenue in the next quarter</em></p>
+</blockquote>
+<p>to having a story?</p>
+<section id="anecdotes" class="level5">
+<h5 class="anchored" data-anchor-id="anecdotes">Anecdotes</h5>
+<p><strong>Anecdotes</strong> are short, relevant, personal accounts of something relevant. The anecdote should be short enough not to distract from the story and long enough to be interesting. If you are telling a story about customers failing to sign up for the paid subscription service after a trial period, you could tell an anecdote about how you recently decided to use an online service because you could create the account through an existing service rather than creating a new username/password combination that you are loathe to track.</p>
+</section>
+<section id="case-studies" class="level5">
+<h5 class="anchored" data-anchor-id="case-studies">Case studies</h5>
+<p>A <strong>case study</strong> explains how a problem led to a solution. The case study does not have to present the identical problem as the one you are telling a story about. It just has to be a relatable study that suggests a possible solution path. Case studies are useful if the audience has experience with problems like those addressed in the case study.</p>
+</section>
+<section id="examples" class="level5">
+<h5 class="anchored" data-anchor-id="examples">Examples</h5>
+<p><strong>Examples</strong> are similar to case studies, except they do not necessarily lay out the challenge or the solution. They can relate the audience to what other organizations are doing. Examples help convey that you are not solving an isolated or unusual problem and others are thinking about it as well.</p>
+</section>
+<section id="scenarios" class="level5">
+<h5 class="anchored" data-anchor-id="scenarios">Scenarios</h5>
+<p>A <strong>scenario</strong> is when you lay out a series of events and you ask the audience to predict each outcome. Scenarios are hypothetical and help get ideas out into the open. Make sure that the scenario is not too simple, otherwise it sounds like a children’s story. Like anecdotes, scenarios work best at the beginning of the story and should be told in the third person—you are not relating a personal experience:</p>
+<blockquote class="blockquote">
+<p><em>Imagine a customer wants to move from the trial experience to a paid subscription. They like the ease with which they can flip the account but are hesitant because they have heard that it is a hassle to discontinue the service in the future</em>.</p>
+</blockquote>
+<p>Anecdotes, case studies, examples, and scenarios are not stories in themselves. They help you weave your story and give the larger message more meaning.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Oliver" class="csl-entry" role="listitem">
+Oliver, Carol A. 2023. <span>“The Social Brain and the Neuroscience of Storytelling.”</span> In <em>Teaching Science Students to Communicate: A Practical Guide</em>, edited by Louise Kuchel and Susan Rowland, 21–30. Springer Verlag, New York.
+</div>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./comm_types.html" class="pagination-link" aria-label="Communciation Types">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Communciation Types</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./frameworks.html" class="pagination-link" aria-label="Frameworks">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Frameworks</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Commnunication in Data Science by Oliver Schabenberger</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

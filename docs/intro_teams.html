@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.552">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Communication in Team-based Data Science - 13&nbsp; Introduction</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./meetings.html" rel="next">
+<link href="./metaphors.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro_teams.html">Part IV. Teams</a></li><li class="breadcrumb-item"><a href="./intro_teams.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Communication in Team-based Data Science</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Part I. Science of Communication</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./comm_models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Communciation Models</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./comm_types.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Communciation Types</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./storytelling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Storytelling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./frameworks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Frameworks</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Part II. Communicating Uncertainty</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Part III. Practice of Communication</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./speaking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Speaking</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./visualizing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Visualizing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./writing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Writing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./nonverbal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Nonverbal Cues</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./presenting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Presenting</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./listening.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Listening</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./paying_attention.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Paying Attention</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./metaphors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Metaphors, Analogies, and Similes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Part IV. Teams</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro_teams.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./meetings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Meetings</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-spaghetti-tower" id="toc-the-spaghetti-tower" class="nav-link active" data-scroll-target="#the-spaghetti-tower"><span class="header-section-number">13.1</span> The Spaghetti Tower</a></li>
+  <li><a href="#dysfunctions-of-a-team" id="toc-dysfunctions-of-a-team" class="nav-link" data-scroll-target="#dysfunctions-of-a-team"><span class="header-section-number">13.2</span> Dysfunctions of a Team</a></li>
+  <li><a href="#three-questions" id="toc-three-questions" class="nav-link" data-scroll-target="#three-questions"><span class="header-section-number">13.3</span> Three Questions</a>
+  <ul>
+  <li><a href="#safety" id="toc-safety" class="nav-link" data-scroll-target="#safety">Safety</a></li>
+  <li><a href="#vulnerability" id="toc-vulnerability" class="nav-link" data-scroll-target="#vulnerability">Vulnerability</a></li>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link" data-scroll-target="#purpose">Purpose</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro_teams.html">Part IV. Teams</a></li><li class="breadcrumb-item"><a href="./intro_teams.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-teams-intro" class="quarto-section-identifier"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Introduction</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+.flushright {
+   text-align: right;
+}
+</style>
+<div class="callout callout-style-default callout-tip callout-titled" title="Quote">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Quote
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="flushright">
+<p><em>Group culture is one of the most powerful forces on the planet.</em><br>
+Daniel Coyle, The Culture Code<br>
+</p>
+<p>Not finance. Not strategy. Not technology. It is teamwork that<br>
+remains the ultimate competitive advantage, because it is so<br>
+powerful and so rare.*<br>
+Patrick M. Lencioni, The Five Dysfunctions of a Team</p>
+</div>
+</div>
+</div>
+<p>We have said it many times before, “data science is a team sport.” We get it, the data scientist is not a one-person show. They work with others, they are a member of teams and they work with other teams. We would like to think that putting highly skilled individuals together that great outcomes are predestined; <em>the total is more than the sum of their parts</em> kind of thing.</p>
+<p>Just because people are highly trained and skilled does not guarantee that they perform well as a group. Many teams are highly dysfunctional and the total of their member’s contributions is less than the sum of their parts. Because teams are made up of human being, imperfect ones, teams are inherently dysfunctional <span class="citation" data-cites="Lencioni_2002">(<a href="references.html#ref-Lencioni_2002" role="doc-biblioref">Lencioni 2002</a>)</span>.</p>
+<p>Understanding team culture and team dynamics is a first step in understanding how to build successful, highly performing teams. Teams are inherently dysfunctional, but they are not doomed. Ask any leader and they will remember fondly situations where they helped build or lead a highly functioning team. Being part of a team is much more enjoyable if the total contributions exceed the sum of its parts—but that does not come easy or for free.</p>
+<section id="the-spaghetti-tower" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="the-spaghetti-tower"><span class="header-section-number">13.1</span> The Spaghetti Tower</h2>
+<p><span class="citation" data-cites="CoyleCulture">Coyle (<a href="references.html#ref-CoyleCulture" role="doc-biblioref">2018</a>)</span> describes an experiment by Peter Skillman, known as the <a href="https://www.marshmallowchallenge.com/">marshmallow challenge</a>. A group is presented with the following resources</p>
+<ul>
+<li>20 pieces of uncooked spaghetti</li>
+<li>one yard of masking tape</li>
+<li>one yard of string</li>
+<li>one standard-size marshmallow</li>
+</ul>
+<div id="fig-marsh-challenge" class="lightbox quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-marsh-challenge-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/marshmallowchallenge.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1"><img src="images/marshmallowchallenge.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-marsh-challenge-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13.1: Tools for the marshmallow challenge (spaghetti tower).
+</figcaption>
+</figure>
+</div>
+<p>The goal is to build with these materials in a limited amount of time (18 minutes) a tower that is as tall as possible with the marshmallow sitting on top.</p>
+<p>The fascinating aspect of the experiments by Skillman is that different groups were asked to build the spaghetti tower and they performed very differently: CEOs, lawyers, business school students, and recent kindergarten graduates. In trial after trial, kindergartners built towers that were taller (26 inches) than the average tower (20 inches), handily beating lawyers (15 inches) and business school students (10 inches!).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Marshmallow challenges are routinely conducted and if you are reading this material as part of a course in data science, I hope that you get to experience it as well. The <a href="https://www.reddit.com/r/geek/comments/elwm0r/my_world_record_marshmallow_challenge_spaghetti/">world record</a>, it appears, stands at 65 inches. (Spoiler alert: following the link reveals how the tallest tower was constructed.)</p>
+</div>
+</div>
+<p>Tom Wujec has conducted about 70 marshmallow challenges across the world, as he reports in his <a href="https://www.youtube.com/watch?v=H0_yKBitO8M">TED talk</a></p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/H0_yKBitO8M" title="Build a tower, build a team | Tom Wujec" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>Wujec explains that kindergartners are not only building taller towers, their structures are also more interesting. Are we suggesting to throw out architecture and engineering and build bridges, airports, and railway systems like kindergartners? No.&nbsp;Thankfully, the very tallest spaghetti towers that supported a marshmallow were built by architects and engineers. Phew.</p>
+<p>But the experiment raises many interesting questions:</p>
+<ul>
+<li>Why were kindergartners so successful at building interesting and tall structures?</li>
+<li>What would the height of towers be if engineers approached the problem like kindergartners?</li>
+<li>Why were business school students under-performing? Is it because when you study business you somehow lose along the way the physics fundamentals a kindergartner easily commands?</li>
+</ul>
+<p>There are a few reasons why the kindergartners outperformed the business students. They have to do with the approach to problem solving and how the team operates</p>
+<p>Kindergartners start building without following a single construction plan. They try things and fail quickly, moving from one prototype to another prototype. They listen to each other and are ready to try out someone’s idea. They cooperate and offer each other help. They start constructing the tower immediately, wasting no time on figuring out how the team operates or who is in charge.</p>
+<p>The business school students are taught to find <strong>the</strong> solution to a problem, to have a definite plan before implementing anything. Like the kindergartners they also went right to work. But rather than building, they examined the materials, thinking strategically, discussing options. They spend most of the 18 minutes developing the optimal plan on how to build the tower. Once they start the actual construction, they have no time to correct and start over if the plan turns out to be flawed. They also waste time on figuring out the rules of engagements (<em>is it OK to criticize?</em>) and their place in the group (<em>who is in charge?</em>): status management. What appears on the surface as a collaborative environment is actually a competitive situation.</p>
+<p>As Coyle puts it</p>
+<blockquote class="blockquote">
+<p><em>The kindergartners succeed not because they are smarter but because they work together in a smarter way.</em></p>
+</blockquote>
+<p>The marshmallow is a metaphor for the <strong>hidden assumptions</strong> in a project. In this case, the assumption that a marshmallow is light and can be easily supported by a bunch of spaghetti. Many teams thus ignore the marshmallow until the end, when they place it on the tower as the last piece of the project. In reality, it turns out the marshmallow is quite heavy and placing it atop of a poorly constructed spaghetti tower can bring down the entire structure—at the very moment that should have defined success.</p>
+<p>Every project has these hidden assumptions, the things you assume to be true without hesitation and without checking. Internet is available. Turning on the faucet dispenses water. The marshmallow weighs next-to-nothing. If what we take for granted does not come true, projects can fail spectacularly.</p>
+</section>
+<section id="dysfunctions-of-a-team" class="level2" data-number="13.2">
+<h2 data-number="13.2" class="anchored" data-anchor-id="dysfunctions-of-a-team"><span class="header-section-number">13.2</span> Dysfunctions of a Team</h2>
+<p>In <em>The Five Dysfunctions of a Team</em>, Patrick M. Lencioni tells the fable of a new CEO taking over a start-up company <span class="citation" data-cites="Lencioni_2002">(<a href="references.html#ref-Lencioni_2002" role="doc-biblioref">Lencioni 2002</a>)</span>. After observing the executive team for several weeks, she calls them to an off-site and introduces them to her analysis. She had noticed five dysfunctions in how the executive team was operating (<a href="#fig-five-dysfunc" class="quarto-xref">Figure&nbsp;<span>13.2</span></a>).</p>
+<ul>
+<li><p><strong>Absence of Trust</strong>. The failure on the part of team members to understand and open up to one another. This is not touchy-feely; great teams are honest with each others and are able to talk about their weaknesses, failures, and concerns without fear of reprisal. What gets in the way is our fear of vulnerability; the evidence of the dysfunction is <strong>invulnerability</strong> in the team.</p></li>
+<li><p><strong>Fear of Conflict</strong>. In the absence of trust, teams do not engage in open, honest and constructive conflict. The evidence of the dysfunction is <strong>artificial harmony and tension</strong>. Instead of engaging in honest dialog about issues and concerns, opinions are held back to preserve harmony. Veiled discussions and guarded comments result.</p></li>
+<li><p><strong>Lack of Commitment</strong>. Constructive conflict is important so that the team can develop a plan that everyone commits to and buys into it. When people cannot have their voices heard and their opinions considered, they will not get on board. It is not about getting consensus, it is about a culture to disagree and commit. The evidence of the dysfunction is <strong>ambiguity</strong>.</p></li>
+<li><p><strong>Avoidance of Accountability</strong>. Holding each other accountable to achieve the team goals, once there is clarity and buy-in about the goals, is difficult because team members are often peers. When people are not committed to the goals, they will try to avoid accountability (“I did not agree to this anyway”) and not hold others accountable. The evidence of this dysfunction is <strong>low standards</strong>.</p></li>
+<li><p><strong>Inattention to Results</strong>. This is the ultimate dysfunction: seeking out individual recognition and attention at the expense of collective results. The dysfunction thrives in environments without accountability. The results the team needs to achieve need to be so clear that no team member would consider actions that would only enhance their individual status or ego. Anything that diminishes achieving the collective goals makes the entire team lose. When it is ambiguous what the team is supposed to achieve as a collective, it is easy to fall back on focusing on individual success. The evidence of the dysfunction is concern about <strong>individual status and ego</strong>.</p></li>
+</ul>
+<div id="fig-five-dysfunc" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-five-dysfunc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/FiveDysfunctions.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-five-dysfunc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13.2: Five dysfucntions of a team. After <span class="citation" data-cites="Lencioni_2002">Lencioni (<a href="references.html#ref-Lencioni_2002" role="doc-biblioref">2002</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Personal Experience">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Personal Experience
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>I was faced with building a leadership team in an organization that was used to a very different leadership style, where the team rarely met as a group. Instead, the CEO would have one-on-one conversations with the executives. After a re-org, some of those executives were now reporting to me.</p>
+<p>Although I had not read the book by Lencioni at the time, I recognized all five dysfunctions in my direct reports. There was a lack of trust, folks did not engage openly with each others. There was a lot of politicking, positioning, and finger-pointing (<em>absence of trust</em>). On the surface, interactions were professional and cordial, covering the tension that existed between the teams (<em>fear of conflict</em>). There had not been a business plan for the entire organization, rather each team muddled along by themselves, setting its on goals in the spirit of what they thought was best for the company (<em>lack of commitment</em> and <em>avoidance of accountability</em>). The “first team” of the leadership members was their own organization, not the leadership team. Goals and results were set for their organization, quietly assuming that this would be for the benefit of the company as a whole (<em>inattention to results</em>). Status, ego, and standing with the CEO were currencies. Some team members did not see the other executives as peers, believing they should be given more weight because they were driving revenue, or were interacting with customers, or had more headcount, or …; fill in the blanks.</p>
+<p>To make the leadership operate as a leadership team, a number of changes were put into place. Chief among them,</p>
+<ul>
+<li>Owning company goals together.</li>
+<li>Compensation plans that spelled out explicitly how variable compensation (bonus) achievement is tied to common goals and to individual goals.</li>
+<li>Treating all members of the leadership as peers by virtue of reporting to me, regardless of title or tenure.</li>
+<li>“Disagree and commit” policy. We argue as a team about best path forward, but when a decision is made, everyone defends the decision as if it had been their idea.</li>
+<li>No finger pointing rule. Instead of blaming your organization’s shortcomings on another team (“I could sell more if I had better product”), you have to offer your organization’s help to the other team, ask “how can I help?”</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="three-questions" class="level2" data-number="13.3">
+<h2 data-number="13.3" class="anchored" data-anchor-id="three-questions"><span class="header-section-number">13.3</span> Three Questions</h2>
+<p>The performance of a team does depend on skill and experience of the team members. But those attributes by themselves do not guarantee a successful team either. It also depends on team culture. And as the famous management consultant Peter Drucker said</p>
+<blockquote class="blockquote">
+<p><em>Culture eats strategy for breakfast.</em></p>
+</blockquote>
+<p>If you do not pay attention to culture, your best strategy is toast. A toxic team culture diminishes team performance and makes us miserable.</p>
+<p>Viewed from the outside, teams with great culture have an enviable <strong>chemistry</strong> that appears like magic. It is not magic, it is something that can be created, it is something that can be done. Strong cultures are built on interactions and our social needs. They have in common to offer a <strong>safe</strong> space where trust is built by shared <strong>vulnerability</strong> and a shared <strong>purpose</strong>.</p>
+<section id="safety" class="level3">
+<h3 class="anchored" data-anchor-id="safety">Safety</h3>
+<p>Our unconscious brains are obsessed with psychological safety. Constantly worrying about whether we are safe in this group, where the dragons lie, whether we have a future with these people. We are looking for belonging cues that signal a safe space: eye contact, physical contact, being listened to, feeling invested in, feeling valued.</p>
+<p>Once we feel safe, we can stop spending energy on worrying whether the social system rejects us and can focus on what the group is supposed to accomplish.</p>
+<p>If you observe your own team or another team, ask yourself three questions:</p>
+<ol type="1">
+<li><p><strong>Who talks?</strong> In high-performing teams, everyone talks and listens in similar proportions. Leaders do not occupy the conversation, they gather information from others.</p></li>
+<li><p><strong>How does information flow?</strong> Are side conversations (“back channels”) and conversations outside the team accepted and encouraged? Does information from those conversations flow back to the team?</p></li>
+<li><p><strong>How does communication work?</strong> Is there a lot of eye contact or are folks looking at their shoes when talking to each other? Do team members communicate with each other or does all communication go through the team leader?</p></li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="On Shoes">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+On Shoes
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>There is a silly joke about the difference between introverts and extroverts. You can tell the difference between an introvert and an extrovert by observing which shoes they look at during a conversation. The Lencioni_2002introvert looks at their own shoes, the extrovert looks at your shoes.</p>
+</div>
+</div>
+</section>
+<section id="vulnerability" class="level3">
+<h3 class="anchored" data-anchor-id="vulnerability">Vulnerability</h3>
+<p>Vulnerability can have different meanings. A farmer is vulnerable to flood and drought, an endangered species is vulnerable to habitat loss, a first grader is vulnerable to bullying by someone in a higher grade. This type of vulnerability describes being in a state where one can be easily attacked or harmed.</p>
+<p>Vulnerability is also an emotion that we experience during times of uncertainty, risk, and emotional exposure <span class="citation" data-cites="BreneBrownDare">(<a href="references.html#ref-BreneBrownDare" role="doc-biblioref">Brown 2018</a>)</span>. In Brené Brown’s words:</p>
+<blockquote class="blockquote">
+<p><em>Vulnerability is not winning or losing. It is the courage to show up when you can’t control the outcome</em>.</p>
+</blockquote>
+<p>Why does vulnerability matter in the performance of teams?</p>
+<p>Vulnerability is not about oversharing (TMI!) or disclosing details of one’s private life. It is about signaling that you are open to receive help and feedback, that you have weaknesses and that you are not clad with armor in your interactions. It is a powerful mechanism to break down barriers, to create connection, and to build trust.</p>
+<p>Fake vulnerability does not work. It has the opposite effect, it breeds distrust. I once worked for a leader who was trying to manipulate with vulnerability: “C’mon folks, tell me what you think of my idea; I am completely vulnerable here.” Except, he wasn’t vulnerable, he was not open to input, and was only interested in affirmation of his idea.</p>
+<p>Vulnerability sounds mushy, touchy-feely; it is anything but that. And it is most certainly not a weakness. Showing up when you cannot control the outcome is not a weakness. Standing in front of an audience to give a presentation is not a weakness. Waiting for the call from the doctor after the biopsy is not a weakness. Giving someone honest feedback that their performance is lacking and putting skin into the game to help them improve is not a weakness. Showing empathy when you inform an employee that they are not a good fit and<br>
+today is their last day with the organization is not a weakness.</p>
+<p>The powerful aspect of vulnerability is its link to cooperation and trust. By sending a genuine vulnerability signal, the receiver is encouraged to send a vulnerability signal back and trust increases. A safe zone is established that allows sender and receiver to cooperate more freely. This loop is contagious and travels through rooms and teams.</p>
+<p>If you observe your own team or another team, ask yourself three questions:</p>
+<ol type="1">
+<li><p><strong>What are the openness signals?</strong> How is trust and cooperation established? Do you notice that it has been built in the past? How are new team members integrated into the group? Vulnerability signals can be subtle, an invitation to contribute ideas, a request for feedback, asking to “tell me more”.</p></li>
+<li><p><strong>How does feedback work?</strong> Giving and receiving feedback are very vulnerable moments. We try to please and avoid getting someone’s feeling hurt. We try to protect ourselves from judgment and rejection. During a performance review your manager tells you 36 things you did great and one thing you could improve on. It is that <em>one</em> thing you take away from the review and it bothers you to no end.<br>
+<br>
+Is feedback given and received with care and empathy or is it given to establish hierarchy? Do team members acknowledge and act on feedback? Do team members feel safe bringing up ideas and how are these received?</p></li>
+<li><p><strong>Are the boundaries understood?</strong> Vulnerability does not mean anything goes, anything can be said, and any behavior is tolerated. Does everyone know what is okay and what is not okay?</p></li>
+</ol>
+</section>
+<section id="purpose" class="level3">
+<h3 class="anchored" data-anchor-id="purpose">Purpose</h3>
+<p>When working with teams I often asked them three questions to learn about their purpose:</p>
+<ol type="1">
+<li><p><strong>What is your product?</strong> The product can be a customer-facing item or an internal deliverable. There should be some form of output that the team can point to: “This is what we do!” Even if the purpose of a team is to develop ideas, the ideas are the product. If you do not produce anything, what is the purpose of doing what you are doing?</p></li>
+<li><p><strong>Who is your customer?</strong> Every team works for someone or something. How is the product picked up and what happens to it afterwards? If the product falls on the floor and nobody picks it up, what is the purpose of doing what you are doing?</p></li>
+<li><p><strong>What does success look like?</strong> How do you measure whether you and the team performed adequately, below, or above expectations? What are the expectations?</p></li>
+</ol>
+<p>If you find yourself on a team that is unsure about what it is they are working on, not clear who or what it is for–if anything, and it is not clear what a good job looks like: get out!</p>
+
+
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;13.1: Tools for the marshmallow challenge (spaghetti tower).</span>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-BreneBrownDare" class="csl-entry" role="listitem">
+Brown, Brené. 2018. <em>Dare to Lead</em>. Random House, New York.
+</div>
+<div id="ref-CoyleCulture" class="csl-entry" role="listitem">
+Coyle, Daniel. 2018. <em>The Culture Code</em>. Bantam Books, New York.
+</div>
+<div id="ref-Lencioni_2002" class="csl-entry" role="listitem">
+Lencioni, Patrick M. 2002. <em>The Five Dysfunctions of a Team: A Leadership Fable, 20th Anniversary Edition</em>. John Wiley &amp; Sons, New York.
+</div>
+</div>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./metaphors.html" class="pagination-link" aria-label="Metaphors, Analogies, and Similes">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Metaphors, Analogies, and Similes</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./meetings.html" class="pagination-link" aria-label="Meetings">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Meetings</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Commnunication in Data Science by Oliver Schabenberger</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","openEffect":"zoom","descPosition":"bottom","loop":false});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

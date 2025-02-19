@@ -1,0 +1,21 @@
+<style>
+.flushright {
+   text-align: right;
+}
+</style>
+
+# Speaking {#sec-speaking}
+
+::: {.callout-tip title="Quotes"}
+:::: {.flushright data-latex=""}
+*According to most studies, people’s number one fear is public speaking. Number two is death. \
+Death is number two. Does that sound right? This means to the average person, \
+if you go to a funeral, you’re better off in the casket than delivering the eulogy.*\
+Jerry Seinfeld\
+\
+*There are two types of speakers: Those who get nervous and those who are liars.*\
+Mark Twain\
+\
+*You are not nervous, you are excited.*
+::::
+:::
