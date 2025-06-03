@@ -13,11 +13,12 @@ editor:
 # Presenting {#sec-presenting}
 
 :::: {.callout-tip title="Quote"}
-::: {.flushright data-latex=""}
-*If you like overheads, you'll love PowerPoint.*\
-Edward Tufte\
-\
-*A great presentation is memorable for the right reasons.*
+::: {.flushright}
+If you like overheads, you'll love PowerPoint.\
+[Edward Tufte]{.quoteauthor}
+
+
+A great presentation is memorable for the right reasons.
 :::
 ::::
 

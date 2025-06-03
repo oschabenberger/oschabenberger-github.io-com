@@ -1,8 +1,3 @@
-<style>
-.flushright {
-   text-align: right;
-}
-</style>
 
 # Listening {#sec-listening}
 
@@ -14,17 +9,18 @@ https://arootah.com/blog/professional-development/communication-influence/5-type
 
 
 ::: {.callout-tip title="Quotes"}
-:::: {.flushright data-latex=""}
-*I remind myself every morning: \
+:::: {.flushright}
+I remind myself every morning: \
 Nothing I say this day will teach me anything.\
-So if I'm going to learn, I must do it by listening.*\
-Larry King\
-\
-*Hearing is listening to what is said. Listening is hearing what isn't said.*\
-Simon Sinek\
-\
-*Knowledge speaks, but wisdom listens.*\
-Jimi Hendrix
+So if I'm going to learn, I must do it by listening.\
+[Larry King]{.quoteauthor}
+
+
+Hearing is listening to what is said. Listening is hearing what isn't said.\
+[Simon Sinek]{.quoteauthor}
+
+Knowledge speaks, but wisdom listens.\
+[Jimi Hendrix]{.quoteauthor}
 ::::
 :::
 
@@ -40,13 +36,15 @@ of listening and strive to become better listeners.
 
 @Ueland writes
 
->*We should all know this: that listening, not talking, is the gifted and
+:::{.quote}
+We should all know this: that listening, not talking, is the gifted and
 great role, and the imaginative role. And the true listener is much more
 believed, magnetic than the talker, and he is more effective and learns more
 and does more good. And so try listening. Listen to your wife, your husband,
 your father, your mother, your children, your friends, to those who love you
 and those who don’t, to those who bore you, to your enemies. It will work a
-small miracle. And perhaps a great one.*
+small miracle. And perhaps a great one.
+:::
 
 Listening is not just for the benefit of the recipient or the sender of a message,
 it is important for the story itself. 
@@ -61,7 +59,10 @@ were choppy, abrupt, or circular, retelling the ending more than once.
 
 @ChristianGriffiths conclude 
 
->*In fact, it’s now clear that the cause and effect are often the reverse: a poor listener destroys the tale.*
+:::{.quote}
+In fact, it’s now clear that the cause and effect are often the reverse: a poor 
+listener destroys the tale.
+:::
 
 This phenomenon is due to **backchanneling**, the person speaking is receiving
 queues and short messages from the listener without losing ones turn to speak. A nod,

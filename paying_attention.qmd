@@ -1,12 +1,4 @@
 
-```{=html}
-<style>
-.flushright {
-   text-align: right;
-}
-</style>
-```
-
 # Paying Attention {#sec-attention}
 
 

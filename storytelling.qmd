@@ -1,24 +1,16 @@
 
-```{=html}
-<style>
-.flushright {
-   text-align: right;
-}
-</style>
-```
-
 # Storytelling {#sec-story-telling}
 
 ::: {.callout-tip title="Quote"}
-::: {.flushright data-latex=""}
-*When communication in data science works, we call it data storytelling.*
+::: {.flushright}
+When communication in data science works, we call it data storytelling.
 :::
 :::
 
 ## What is a Story
 
 Everybody wants to be a *storyteller*. I admit that NBC's [The Voice](https://www.nbc.com/the-voice) 
-is one of my favorite shows on TV. When the judges respond to a contestant's 
+is one of my favorite TV shows. When the judges respond to a contestant's 
 performance they are often praised as *storytellers*. 
 
 Telling stories is widely accepted as the most effective, persuasive, and 
@@ -28,7 +20,7 @@ remember by connecting us emotionally to the narrative.
 What is a story, what is storytelling, and why is it effective?
 
 A story is a narrative with a beginning, a middle, and an end. This is also
-described with the **ABT** formula  in @Oliver:
+described with the **ABT** formula in @Oliver:
 
 * **A**, the beginning: "*And* this is the way things were"
 * **B**, the middle: "*But* there was a problem"
@@ -120,6 +112,43 @@ transfer of memories.
 In telling the stories in the TEDx talk, Phillips combines the **tools** and
 **ingredients** of storytelling with the **art** of storytelling to connect 
 with the audience.
+
+
+## Storytelling Models
+
+We mentioned the **ABT** formula at the beginning of the chapter. This is only
+one of many models (or frameworks) to tell a story. @fig-story-models shows
+five additional approaches to crafting a story.
+
+![Storytelling frameworks according to Eric Partaker. [Source](https://www.linkedin.com/posts/marcellvollmer_storytelling-leadership-ceo-activity-7317941969786187776-eyzw/).](images/StoryTellingModels.jpeg){#fig-story-models fig-align=center .lightbox width=75%}
+
+
+The Golden Circle refers to a concept promoted by Simon Sinek in one of his
+famous TED talks and in his book "[Start With Why](https://www.amazon.com/Start-Why-Leaders-Inspire-Everyone/dp/1591846447)".
+You can watch a video of the talk at the link below. Sinek argues that too often
+we communicate from the outside-in, starting with *What* we are doing, then 
+explaining *How* we are doing it, and only then getting to the reason behind it all, 
+the *Why*. Effective communication works from the inside-out, starting with *Why*
+we are doing what we are doing--the thing or purpose that drives us.
+
+{{< video https://www.youtube.com/watch?v=qp0HIF3SfI4 >}}
+
+A common element of these storytelling models is to make an emotional connection
+early in the communication process:
+
+- The Golden Circle. If you lead communication with your purpose, your just cause, 
+the reason why your organization (or you) exist, you communicate from a place of 
+passion and meaning that gives communication credibility (ethos) and pathos.
+
+- Minto's Pyramid. By starting a pitch with the answer, the main point, you
+get the attention of the audience.
+
+- ABT. By starting with shared context you are operating at the same level as 
+the audience. The Pixar pitch does the same by describing a world and setting up 
+a context with "Once upon a time...".
+
+- StoryBrand. You lead with a customer problem, making the issue personal and
+relatable.
 
 
 ## Data Storytelling

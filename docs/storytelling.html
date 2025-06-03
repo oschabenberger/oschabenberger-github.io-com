@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Communication in Team-based Data Science - 3&nbsp; Storytelling</title>
+<title>Communication in Team-Based Data Science - 3&nbsp; Storytelling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -63,6 +63,9 @@ div.csl-indent {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -119,7 +122,7 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Communication in Team-based Data Science</a> 
+      <a href="./">Communication in Team-Based Data Science</a> 
         <div class="sidebar-tools-main">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
@@ -179,7 +182,7 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./frameworks.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Frameworks</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Frameworks and Concepts</span></span></a>
   </div>
 </li>
       </ul>
@@ -288,7 +291,8 @@ div.csl-indent {
   <ul>
   <li><a href="#what-is-a-story" id="toc-what-is-a-story" class="nav-link active" data-scroll-target="#what-is-a-story"><span class="header-section-number">3.1</span> What is a Story</a></li>
   <li><a href="#why-are-stories-effective" id="toc-why-are-stories-effective" class="nav-link" data-scroll-target="#why-are-stories-effective"><span class="header-section-number">3.2</span> Why are Stories Effective</a></li>
-  <li><a href="#data-storytelling" id="toc-data-storytelling" class="nav-link" data-scroll-target="#data-storytelling"><span class="header-section-number">3.3</span> Data Storytelling</a>
+  <li><a href="#storytelling-models" id="toc-storytelling-models" class="nav-link" data-scroll-target="#storytelling-models"><span class="header-section-number">3.3</span> Storytelling Models</a></li>
+  <li><a href="#data-storytelling" id="toc-data-storytelling" class="nav-link" data-scroll-target="#data-storytelling"><span class="header-section-number">3.4</span> Data Storytelling</a>
   <ul>
   <li><a href="#visual-essays" id="toc-visual-essays" class="nav-link" data-scroll-target="#visual-essays">Visual Essays</a></li>
   <li><a href="#telling-stories-about-data-science" id="toc-telling-stories-about-data-science" class="nav-link" data-scroll-target="#telling-stories-about-data-science">Telling Stories about Data (Science)</a>
@@ -324,11 +328,6 @@ div.csl-indent {
 </header>
 
 
-<style>
-.flushright {
-   text-align: right;
-}
-</style>
 <div class="callout callout-style-default callout-tip callout-titled" title="Quote">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -340,13 +339,13 @@ Quote
 </div>
 <div class="callout-body-container callout-body">
 <div class="flushright">
-<p><em>When communication in data science works, we call it data storytelling.</em></p>
+<p>When communication in data science works, we call it data storytelling.</p>
 </div>
 </div>
 </div>
 <section id="what-is-a-story" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="what-is-a-story"><span class="header-section-number">3.1</span> What is a Story</h2>
-<p>Everybody wants to be a <em>storyteller</em>. I admit that NBC’s <a href="https://www.nbc.com/the-voice">The Voice</a> is one of my favorite shows on TV. When the judges respond to a contestant’s performance they are often praised as <em>storytellers</em>.</p>
+<p>Everybody wants to be a <em>storyteller</em>. I admit that NBC’s <a href="https://www.nbc.com/the-voice">The Voice</a> is one of my favorite TV shows. When the judges respond to a contestant’s performance they are often praised as <em>storytellers</em>.</p>
 <p>Telling stories is widely accepted as the most effective, persuasive, and influential form of communication. Stories help us learn and remember by connecting us emotionally to the narrative.</p>
 <p>What is a story, what is storytelling, and why is it effective?</p>
 <p>A story is a narrative with a beginning, a middle, and an end. This is also described with the <strong>ABT</strong> formula in <span class="citation" data-cites="Oliver">Oliver (<a href="references.html#ref-Oliver" role="doc-biblioref">2023</a>)</span>:</p>
@@ -392,8 +391,31 @@ Quote
 <p>Brain researchers describe a mind meld between teller and listener during storytelling. It is not as if the two brains act as one, but more like the brain activity patterns seen in the storyteller are mirrored in the listener, whether there is one listener or many. And the more similar the brain patterns are, the better the transfer of memories.</p>
 <p>In telling the stories in the TEDx talk, Phillips combines the <strong>tools</strong> and <strong>ingredients</strong> of storytelling with the <strong>art</strong> of storytelling to connect with the audience.</p>
 </section>
-<section id="data-storytelling" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="data-storytelling"><span class="header-section-number">3.3</span> Data Storytelling</h2>
+<section id="storytelling-models" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="storytelling-models"><span class="header-section-number">3.3</span> Storytelling Models</h2>
+<p>We mentioned the <strong>ABT</strong> formula at the beginning of the chapter. This is only one of many models (or frameworks) to tell a story. <a href="#fig-story-models" class="quarto-xref">Figure&nbsp;<span>3.1</span></a> shows five additional approaches to crafting a story.</p>
+<div id="fig-story-models" class="lightbox quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-story-models-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/StoryTellingModels.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1"><img src="images/StoryTellingModels.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-story-models-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: Storytelling frameworks according to Eric Partaker. <a href="https://www.linkedin.com/posts/marcellvollmer_storytelling-leadership-ceo-activity-7317941969786187776-eyzw/">Source</a>.
+</figcaption>
+</figure>
+</div>
+<p>The Golden Circle refers to a concept promoted by Simon Sinek in one of his famous TED talks and in his book “<a href="https://www.amazon.com/Start-Why-Leaders-Inspire-Everyone/dp/1591846447">Start With Why</a>”. You can watch a video of the talk at the link below. Sinek argues that too often we communicate from the outside-in, starting with <em>What</em> we are doing, then explaining <em>How</em> we are doing it, and only then getting to the reason behind it all, the <em>Why</em>. Effective communication works from the inside-out, starting with <em>Why</em> we are doing what we are doing–the thing or purpose that drives us.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/qp0HIF3SfI4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>A common element of these storytelling models is to make an emotional connection early in the communication process:</p>
+<ul>
+<li><p>The Golden Circle. If you lead communication with your purpose, your just cause, the reason why your organization (or you) exist, you communicate from a place of passion and meaning that gives communication credibility (ethos) and pathos.</p></li>
+<li><p>Minto’s Pyramid. By starting a pitch with the answer, the main point, you get the attention of the audience.</p></li>
+<li><p>ABT. By starting with shared context you are operating at the same level as the audience. The Pixar pitch does the same by describing a world and setting up a context with “Once upon a time…”.</p></li>
+<li><p>StoryBrand. You lead with a customer problem, making the issue personal and relatable.</p></li>
+</ul>
+</section>
+<section id="data-storytelling" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="data-storytelling"><span class="header-section-number">3.4</span> Data Storytelling</h2>
 <p>How does the neuroscience of storytelling, the dramatic arc and storytelling principles such as place and time, characters, conflict, transformation, and resolution map to communication about data? Do I need to weave all this around the pie chart I need to talk about?</p>
 <p>There are two important variations of data storytelling for us:</p>
 <ul>
@@ -510,6 +532,9 @@ Credits
 <p>Anecdotes, case studies, examples, and scenarios are not stories in themselves. They help you weave your story and give the larger message more meaning.</p>
 
 
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;3.1: Storytelling frameworks according to Eric Partaker. <a href="https://www.linkedin.com/posts/marcellvollmer_storytelling-leadership-ceo-activity-7317941969786187776-eyzw/">Source</a>.</span>
+</div>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
 <div id="ref-Oliver" class="csl-entry" role="listitem">
 Oliver, Carol A. 2023. <span>“The Social Brain and the Neuroscience of Storytelling.”</span> In <em>Teaching Science Students to Communicate: A Practical Guide</em>, edited by Louise Kuchel and Susan Rowland, 21–30. Springer Verlag, New York.
@@ -1081,8 +1106,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./frameworks.html" class="pagination-link" aria-label="Frameworks">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Frameworks</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./frameworks.html" class="pagination-link" aria-label="Frameworks and Concepts">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Frameworks and Concepts</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1100,6 +1125,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":false,"closeEffect":"zoom","openEffect":"zoom","selector":".lightbox"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 

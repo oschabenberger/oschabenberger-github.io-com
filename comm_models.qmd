@@ -217,11 +217,16 @@ be instructed they go on telling just the same thing forever.*
 
 ### Nonverbal Communication {#sec-theory-nonverbal}
 
-Nonverbal communication are the ways in which we convey messages and information
-by other means than speaking, visualizing, or writing. Examples of nonverbal
-cues in communication include body language, facial expression, clothing, posture, 
-eye contact, touch, loudness and tone of voice, use of space, movement, 
-and nonverbal vocalizations such as sighing, scoffing, laughing, crying.
+Nonverbal communication are the ways in which we convey and receive messages and 
+information by other means than speaking, visualizing, or writing. 
+Nonverbal communication is both intentional and unintentional, many speakers are
+not aware of some of the nonverbal cues that enhance or detract from the message.
+
+Examples of nonverbal cues in communication include body language, facial expression, 
+clothing, posture, eye contact, touch, loudness and tone of voice, use of space, 
+movement, smell, and nonverbal vocalizations such as sighing, scoffing, laughing, 
+crying. Nonverbal messages are also produced by the overall setting, for example,
+use of space, time, and silence.
 
 
 :::{.callout-note title="Personal Experience"}
@@ -257,7 +262,6 @@ communicate through body language do not match, then the postural component
 dominates the attitude that is inferred. In other words, if your nonverbal
 communication contradicts the message, the contradiction will win out. 
 
-
 When someone yells "I am fine" while writhing in pain on the ground with a 
 broken bone sticking out of their leg, we believe the nonverbal part of the 
 communication. They are not fine.
@@ -277,7 +281,7 @@ carried by the words we say.
 
 #### The first impression
 
-Thin-slicing is a term from psychology to describe finding patterns and 
+**Thin-slicing** is a term from psychology to describe finding patterns and 
 shaping opinions based on a small amount of information, a thin slice of the
 possibly available information. Research has shown that we are surprisingly good 
 at thin-slicing, the attitudes formed based on small amounts of information are
@@ -288,7 +292,7 @@ them, taking a quick snapshot of who we think they are. In a study of TED talks,
 discussed [here](https://blog.ted.com/body-language-survey-points-to-5-nonverbal-features-that-make-ted-talks-take-off/),
 the authors investigated what makes some TED talks go viral while others get
 many fewer views. After all, TED talks in general are great talks, with interesting
-content delivered well rehearsed by credible speakers.
+content delivered by well rehearsed and credible speakers.
 
 The research showed that we are thin-slicing speakers almost immediately based
 on nonverbal cues. Are they credible and competent? Are they charismatic? 
@@ -297,7 +301,7 @@ by extension about the talk, were formed largely during the first seven seconds.
 To test the result, the study compared the ratings of audiences who watched only
 the first seven seconds of the talk and those who watched the full talk. Which 
 speakers and talks the audiences overall liked and disliked matched. As soon
-as the person takes the stage we thin-slide and form an opinion "I think I am
+as the person takes the stage we thin-slice and form an opinion "I think I am
 going to like this talk".
 
 Here are a few other fascinating results from the study of TED talks:

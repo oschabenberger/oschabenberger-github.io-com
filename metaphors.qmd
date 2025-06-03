@@ -1,11 +1,4 @@
 
-```{=html}
-<style>
-.flushright {
-   text-align: right;
-}
-</style>
-```
 
 # Metaphors, Analogies, and Similes {#sec-metaphors}
 

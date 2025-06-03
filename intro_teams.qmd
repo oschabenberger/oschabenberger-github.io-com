@@ -1,22 +1,14 @@
 # Introduction {#sec-teams-intro}
 
-```{=html}
-<style>
-.flushright {
-   text-align: right;
-}
-</style>
-```
-
 ::: {.callout-tip title="Quote"}
-::: {.flushright data-latex=""}
-*Group culture is one of the most powerful forces on the planet.*\
-Daniel Coyle, The Culture Code\
+::: {.flushright}
+Group culture is one of the most powerful forces on the planet.\
+[Daniel Coyle, The Culture Code]{.quoteauthor}
 
 Not finance. Not strategy. Not technology. It is teamwork that\
-remains the ultimate competitive advantage, because it is so\
-powerful and so rare.*\
-Patrick M. Lencioni, The Five Dysfunctions of a Team
+remains the ultimate competitive advantage, \
+because it is so powerful and so rare.\
+[Patrick M. Lencioni, The Five Dysfunctions of a Team]{.quoteauthor}
 :::
 :::
 

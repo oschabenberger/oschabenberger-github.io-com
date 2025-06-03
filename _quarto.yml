@@ -3,10 +3,10 @@ project:
   output-dir: docs
   
 book:
-  title: "Communication in Team-based Data Science"
+  title: "Communication in Team-Based Data Science"
   subtitle: "Beyond the Numbers"
   author: "Oliver Schabenberger"
-  date: "9/04/2024"
+  date: "2/19/2025"
   reader-mode: true
 
   page-footer:

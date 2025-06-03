@@ -54,7 +54,7 @@ we favor a different approach. You can be a good data scientist without strong
 communication skills. But you cannot be a great data scientist without. You can
 be a good data scientist working by yourself, but you cannot be a great data
 scientist without understanding team dynamics and being a leader and/or 
-contributor to teams.
+contributor to teams. 
 
 We treat these skills not as soft, but as **human skills** necessary to do the
 job you are training for well. It is a topic that requires systematic study
@@ -66,7 +66,11 @@ Why is it so important to have excellent communication skills in data science?
 
 * Data science is a **team sport**. Even if you are the only data scientist in your
 organization, you are connecting and collaborating with people from other units.
-Communication facilitates effective collaboration.
+The problems you work on are often complex and require cross-organizational, 
+cross-disciplinary teams. Since so many problems involve data, the data scientist 
+is a full member or partner of the team. What matters ultimately is not the data 
+science itself, but the impact of the total effort. Communication facilitates 
+effective collaboration and team work.
 
 * Our **subject is technical** and inherently difficult to understand. Data science
 requires technical knowledge in statistics, mathematics, and programming. Those
@@ -114,16 +118,51 @@ transcend rank and to inspire and influence.
 
 @Church2023 summarizes as follows
 
->*By communicating effectively, data scientists can ensure that their work aligns
+:::{.quote}
+By communicating effectively, data scientists can ensure that their work aligns
 with business goals, that they are working on the most impactful problems, that 
 they collaborate successfully with others, that they present results and insights 
-effectively, and that they ultimately influence decisions and actions.*
+effectively, and that they ultimately influence decisions and actions.
+:::
 
+## Making Data Science Look Good
+
+@Derr2000 refers to communication skills as **enabling skills**, they enable you 
+to be an effective data scientist. At the heart of the data science project are
+multiple communication steps. A business problem is communicated to you; it
+needs to be translated (another communication activity) into a data science 
+context from which a data science solution is developed. The solution must be
+translated into the relevant business context and communicated back to the 
+stakeholders. 
+
+At the beginning you draw on listening skills and the ability to ask the 
+right$\texttrademark$ questions. When presenting the solution to stakeholders
+you draw on speaking, writing, visualization, and presentation skills.
+
+Data scientists, statisticians, and other data professionals are not known for
+their communication skills, making these fundamental exchanges frustrating for
+both sides. 
+
+>*Why did they not ask about the goals of the project and how success
+is measured?*
+
+>*How does "significance" in their mind translate into business relevance?*
+
+Improving communication skills raises your confidence as a data professional
+and enables you to interact more confidently with others. More confident interactions
+enable others to interact more confidently with you. This raises the profile of
+the profession. You want the CEO of the company to think
+
+>*Ah, you are a data scientist. Great. Then you can explain this to me...*
+
+and not
+
+>*Oh, ..., nerd!*
 
 ## A Personal Account
 
 My personal post-graduate career progression took me from being a professor and academician
-to a role as a software developer, to a technical leader, an R\&D leader, an
+to roles as software developer, as technical leader, an R\&D leader, an
 R\&D executive, to an operating company executive. As a software developer I was a 
 member of a team of 5--10 people and worked with about 60 folks across other teams.
 As a technical leader, R\&D leader, and executive I was responsible first for a team of 5, 
@@ -134,7 +173,7 @@ called upon. Looking back, the need to effectively communicate was a constant
 while the mode and style of communication changed with the size and type of the 
 audience and the position.
 
-Realizing the importance of communication and growing that skill was one of the
+Realizing the importance of communication and growing those skills was one of the
 most important and most rewarding lifelong learning lessons.
 
 
@@ -149,8 +188,7 @@ most important and most rewarding lifelong learning lessons.
     
 * Participating and leading interdisciplinary teams
     * How do you do collaborative work?
-    
-    
+
 * Patterns and templates
     * What are the steps you go through in a regression, in a classification
     model?
@@ -160,9 +198,3 @@ most important and most rewarding lifelong learning lessons.
     * Misinformation: processing false or inaccurate information as if it was valid
     * Disinformation: deliberately misinforming, intentionally misleading. Disinformation
     is the intentional form of misinformation.
-    
-    The "bullshit asymmetry principle": the amount of information needed to refute 
-    bullshit is an order of magnitude greater than to produce it
-    (https://x.com/ziobrando/status/289635060758507521)
-    
-  

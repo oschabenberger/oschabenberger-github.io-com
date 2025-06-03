@@ -1,24 +1,13 @@
 
-
-```{=html}
-<style>
-.flushright {
-   text-align: right;
-}
-</style>
-```
-
-# Frameworks {#sec-frameworks}
+# Frameworks and Concepts {#sec-frameworks}
 
 ## Problem Analysis {#sec-problem-analysis}
 
 Data scientists are inundated with questions and requests. A director in the
 Finance department shoots you this email in the morning:
 
-::: {.flushright data-latex=""}
-*Has the SaaS business been growing over the past three months\
+>*Has the SaaS business been growing over the past three months
 and will the trend continue over the next quarter?*
-:::
 
 If this question hits the desk of the data science team, does everyone know what
 needs to be done? Is it clear what the question is? Is there a deeper question
@@ -33,11 +22,9 @@ team up for success. Ill-framed problems have the opposite effect.
 The question about the growth of the SaaS is not well framed. A better ask would
 have been:
 
-::: {.flushright data-latex=""}
-*Measured by net retention rate (NRR), what is the NRR over the past quarter\
-and can you predict the NRR for the next quarter, assuming that we\
+>*Measured by net retention rate (NRR), what is the NRR over the past quarter
+and can you predict the NRR for the next quarter, assuming that we
 make no major changes to sales and marketing?*
-:::
 
 Two methodological approaches that help unpack a problem and get to its essence 
 are *The 5-Why* framework and the *40-20-10-5* rule. This is known as 
@@ -63,7 +50,7 @@ you do not necessarily have to go down 5-deep.
 
 :::{.example}
 ::::{.example-header}
-Problem: The website was not updated in time.
+Problem: The Website was not Updated in Time.
 ::::
 ::::{.example-container}
 1. Why did this happen?\
@@ -236,7 +223,7 @@ building more memorable---if that is you, then you are a rarity.
 @Heath2007 develop a framework for gauging the stickiness of an idea. A sticky
 idea is one that is understood and remembered, and has a lasting impact by 
 changing the audience's opinions or behavior. The concept of the sticky idea
-translates directly to sticky communication.
+translates directly to **sticky communication**.
 
 In order for an idea to be sticky it does not have to be truthful. The kidney
 heist story is an urban legend. And it is a very sticky story. The story first
@@ -281,5 +268,355 @@ In short, sticky ideas are **S**imple, **U**nexpected, **C**oncrete,
 **C**redentialed, **E**motional **S**torie**s** (SUCCESs).
 
 
+## Brandolini's Law {#sec-brandolini-law}
+
+<!---
+https://en.wikipedia.org/wiki/Brandolini%27s_law
+--->
+
+Albert Brandolini is an Italian software developer who coined in 2013 by way
+of a Twitter post a law that bears his name (@fig-brandolini).
+
+![Brandolini's Law](images/BrandoliniLaw.png){#fig-brandolini fig-align=center width=80%}
+
+With slightly corrected grammar the law is also known as the **bullshit asymmetry**
+principle:
+
+>*The amount of energy needed to refute bullshit is an order of magnitude bigger than 
+that needed to produce it.*
+
+:::{.example}
+::::{.example-header}
+Example: MMR Autism Study in *Lancet*
+::::
+::::{.example-container}
+Andrew Wakefield and twelve coauthors published in 1998 the paper "Ileal-lymphoid-nodular 
+hyperplasia, non-specific colitis, and pervasive developmental disorder in children"
+in the reputable medical journal *The Lancet*. The paper claimed to establish cause 
+and effect relationship between the MMR (measles, mumps, rubella) vaccine and colitis
+and between colitis and autism. This paper is the source of the imagined relationship
+between vaccines and autism.
+
+The study caused a public stir and resulted in a decline in vaccinations, which in 
+turn led to deadly measles outbreaks around the world.
+
+Other researchers were not able to reproduce and confirm the paper's findings.
+It was disclosed that Wakefield had a financial interest worth several million 
+dollars per year selling test kits. In 2010 it was found that Wakefield had been
+dishonest in the research, that portions of the study were falsified, and that
+*The Lancet* had been deceived. The journal fully retracted the study, Wakefield
+recanted and lost his medical license.
+
+It took 12 years of energy to refute the bullshit Wakefield produced in a single
+paper. Conspiracy theories about the connection between vaccines and autism are 
+still swirling today. The U.S. Department of Health and Human Services hired
+in March 2025 vaccine critic David Greier, who holds no medical credentials,
+to conduct a study on the link of vaccines and autism---long after the link
+has been debunked.
+
+It seems that we still need to spend more energy to refute the bullshit.
+::::
+:::
+
+In 2020, researchers studied the sensitivity to bullshit and found that 
+
+:::{.quote}
+people are more receptive to bullshit, and less sensitive to detecting bullshit, 
+under conditions in which they possess relatively few self-regulatory resources.
+:::
 
 
+## Modes of Intelligence
+
+@Gardner_1983 coined the idea of multiple intelligences. Rather than a single,
+general intelligence, human intelligence is made up of different modalities 
+(@fig-multi-intelli). The modalities most associated with the traditional notion
+of general intelligence are the **linguistic** and the **logical-mathematical** 
+intelligences. 
+
+![Intelligence modalities. Source: [Wikipedia](https://en.wikipedia.org/wiki/Theory_of_multiple_intelligences). Naturalistic intelligence was not part of the initial seven modes and was added later.](images/MultipleIntelligence.jpg){#fig-multi-intelli fig-align=center width=75%}
+
+The intelligences (modalities) express themselves as skills or competencies. Someone
+with high linguistic intelligences learns languages easily and enjoys reading,
+writing, and storytelling. Someone with well-developed interpersonal intelligence
+will be able to sense other's moods and intentions, they have high empathy.
+
+Critics of the theory of multiple intelligences object to using the term intelligence
+to describe what they consider to be just abilities, talents, or aptitudes. The
+theory conflates personality, talent, and learning style and there is no experimental
+data to back up the categorization. Further, Gardner's theory is based on low 
+correlations between the modes of intelligence, as if they are almost orthogonal. 
+The correlations between different aspects of intelligence are typically strong, 
+however, supporting the idea of a general intelligence.
+
+Despite the criticism, the theory of modes of intelligences is helpful to us in 
+several ways.
+
+- It helps us to understand the abilities of others and how to adjust mode of 
+communication for the benefit of the recipient. If you are communicating to
+people who work daily with maps (spatial intelligence), making your point by
+presenting text or tables adds extra cognitive burden.
+
+- It helps to recognize how different abilities are being used in solving data science 
+problems. Except for the naturalistic and musical intelligences, you will likely
+be challenged as a data scientist to exercise all modes of intelligence. The 
+diversity of thoughts and ways of looking at a problem is a strength of teams.
+
+
+| Mode | Skills | Data Science Relevance |
+|:----|:------------|:------------|
+|**Verbal-Linguistic**| Sensitivity to words and their meaning. Includes abstract reasoning and symbolic thinking. Learns languages easily; enjoys reading, writing, storytelling | Need to communicate quantitative information through language|
+|**Logical-Mathematical**|Inductive and deductive reasoning. Recognizing patterns and relationships. Good at problem finding and convergent problem solving.| An essential part of research, discovering relationships, testing hypotheses. Application of abstract rules to specific problems.|
+|**Visual-Spatial**| Mental visualization (seeing with the mind's eye) and perception of the world. Practical problem solving and artistic creation.| Producing data visualizations and working in abstract, high-dimensional spaces. Design of applications and interfaces.
+|**Interpersonal**| Establish relationships with others. Sensitivity to other's moods and intentions. Empathetic. Can be leaders or followers. | Cooperating with and leading others. Essential to working on teams.|
+|**Intrapersonal**| Knowledge of self and ability to reflect and introspect. Predict and manage your own reaction. | Developing abstract theory. Leading and decision making in high-stress situations. 
+|**Body-Kinesthetic**| Control of bodily movements and motor control. Includes sense of timing and sense of goal of physical action. Prefers hands-on learning. | Communicating data science knowledge to hands-on learners. Giving presentations.
+|**Musical-Rhythmical**| Sensitivity to sounds, rhythms, timber, meter, tones, and pitch. ||
+|**Naturalistic**| Ability to recognize flora and fauna. Nurturing and relating information to one's natural surroundings. Pattern recognition, taxonomy, and empathy for living beings are essential cognitive skills.| Clearly important in our past as hunters, gatherers, and farmers. Not of great relevance in working with data.
+
+: The modalities of multiple intelligence. {#tbl-multi-intelligence .striped}
+
+## Computational Kindness
+
+### The Principle
+
+**Computational kindness** is a concept and principle introduced in @ChristianGriffiths. 
+It asks us to consider the cognitive (computational) burden in interactions with 
+others. This consideration is obviously relevant to how we communicate with 
+others.
+
+In designing functions and algorithms, computer scientists worry a great deal
+about **computational complexity**, the resources required to carry out a 
+computational task. Particular attention is paid to the number of operations
+required (time complexity), the memory requirements (space complexity) or the 
+amount of data exchanged over the network (communication complexity). For example,
+search algorithms are ranked in terms of their time complexity---using O-notation. 
+The complexity of the best algorithm that solves a problem is the complexity of 
+the problem. 
+
+The underlying idea is that computation should be minimized---computation is *bad*. 
+It is bad to compute more than necessary, require more memory than necessary, 
+communicate with other machines more than necessary. In other words, the underlying 
+principle is to minimize the **labor of thought**, to minimize the computational burden.
+
+This principle translates very well into how we make decisions and design 
+systems in real life. You are computationally kind when you are respectful of 
+the cognitive problems you force others to solve. @fig-bus-stop shows digital 
+signage at a bus stop that has a low cognitive burden; it is computationally kind. 
+The arrival times, even if estimated, of the next six buses visiting the stop are 
+shown in order. 
+
+![A bus stop with digital signage that lowers cognitive burden](images/bus_stop_digital_sign.png){#fig-bus-stop fig-align="center" width=50% .lightbox}
+
+If I am waiting for the Number 12 bus, and stopping at the coffee shop nearby
+takes 5 minutes, I can be assured that I will not miss the bus should I opt for
+a latte now. The cognitive burden of this sign is much lower than that of 
+@fig-bus-stop2.
+
+![A bus stop sign in Paris, France.](images/bus_stop_signage.jpg){#fig-bus-stop2 fig-align="center" width=50%}
+
+As @ChristianGriffiths put it, 
+
+:::{.quote}
+We can be “computationally kind” to others by framing issues in terms that make 
+the underlying computational problem easier.
+:::
+
+### Kind but not Polite
+
+Computational kindness and politeness can be at odds. 
+
+Etiquette suggests to figure out how to spend the evening out by asking 
+
+>"What do you want to do tonight?"
+
+The question places the cognitive burden of the decision on the other party. That
+is called "passing the cognitive buck". They now have
+to figure out your preferences unless you will go along with their decision or
+they do not care to consider your preferences. It is computationally more kind
+to constrain the problem presented to the other party. You can state your 
+preferences---"I want to go to a movie"---or provide a limited set of options to 
+choose from: 
+
+>"Let's go to McDonald's or Taco Bell followed by either a movie or 
+playing pool at the sports bar." 
+
+Computational kindness reduces mental burden but can be detrimental to your relationships.
+
+Why are folks more likely to schedule meetings when you ask 
+
+>"Can you meet tomorrow at 10 am?" 
+
+instead of 
+
+>"What days and times next week are convenient for you?"
+
+The answer lies in the mental burden to craft a response. The first
+question specifies constraints of the solution space. Now I do not have to 
+spend mental energy going through the open slots in my calendar, assemble a list
+of possible days and times for a meeting, send them back to the inquirer and 
+wait for a response. All I have to do is check my calendar against a narrow constraint:
+tomorrow at 10 am. The first question is computationally kind, reducing mental
+burden by adding a constraint. Asking what days and times are convenient is 
+computationally cruel.
+
+The more polite response when someone tries to schedule with you is to say "I am
+flexible". It is also the computationally most cruel one because it passes the
+buck of computation to the inquirer. They have to do all the work to narrow down 
+the large number of possibilities. Saying "I can do Monday at 2 pm and Wednesday
+at 4 pm" is computationally kind because it constrains the requester to 
+two options. And if neither of those work they will come back with another day
+and time---which you can likely accept because you are flexible.
+
+---
+
+Our brains are sophisticated computing machines. If we design algorithms to 
+make the best use of resources, then we can also strive to make everyday tasks
+more computationally friendly to our brain. Opportunities are everywhere.
+
+- Restaurant policies to secure a table have very different levels of mental labor.
+An open seating policy means whoever gets to an open table first gets to sit
+down. Customers will hover, constantly checking on which tables might open up,
+anxiously awaiting their turn. A policy where patron check-in upon arrival,
+can visit the bar, and are being told when their table opens up has a much 
+lower cognitive burden for the patron, but is less computationally kind on the
+restaurant. \
+\
+A reservation service that guarantees you a table has the lowest stress
+level for the patron and the highest computational burden for the restaurant.
+Unless the restaurant knows how to take a reservation but not how to hold
+a reservation.
+
+:::{.centered}
+{{< video https://www.youtube.com/watch?v=A7uvttu8ct0 
+    width="400" height="300" >}}
+:::
+
+- Airline boarding policies. First-come-first serve versus assigned groups that
+board the plane from the back.
+
+- The bus stop that announces the arrival time of the buses versus one that makes
+you guess and wait.
+
+- Navigating a cluttered website with too much information and repeated ads versus
+a clean design where information is easy to find.
+
+- Assembly instructions that are written in some Klingon dialect.
+
+- Amazon's 1-Click online buying system reduced the cognitive load of ordering online.
+With a shipping address and a credit card stored in the profile, you can check 
+out the items in the shopping cart with a single click on the website.
+
+:::{.assignment}
+::::{.assignment-header}
+Assignment: Designing a Parking Lot
+::::
+::::{.assignment-container}
+You are operating a mall or large venue and are designing a parking lot for 
+visitors of the space. Four designs are being proposed:
+
+1. A standard grid of lanes leading away from the venue with parking spaces on
+both sides of the lane.
+2. A standard multi-story parking deck.
+3. A single lane leading away from the venue with parking spaces on both sides
+of the lane.
+4. A helix-type structure that winds upward from the ground level where the 
+venue is located. Parking spaces are accessed directly from the helix.
+
+- Rank the four designs in terms of computational kindness to drivers.
+- Are parking lot designs you find in real life paying attention to 
+computational kindness considerations?
+- Can you think of other designs or technologies that balance the tradeoff 
+between mental labor of finding a parking spot and convenience?
+::::
+:::
+
+### In Communication
+
+In communication we want to be computationally kind without being impolite. We
+want to minimize cognitive load for the communicator and the recipient of 
+information---particularly for the latter. We want to reduce the mental effort
+required to receive communication and to respond to it. 
+
+The benefits are clearer and more engaging communication, better understanding
+and collaboration, less frustration, more trust and collaboration.
+
+Here are some ways to be kind in communication:
+
+- Be mindful of how questions are asked. Avoid open-ended questions such as 
+"What do you think?" or "Questions, comments, concerns?". Instead ask specific
+questions such as "Is retention or revenue the main driver of the project?" Provide
+options to choose from.
+
+- Be mindful of the recipient's understanding. Avoid jargon and technical terms 
+that might not be understood. Do not assume that terms familiar to the data 
+scientist are familiar to the recipient.
+
+- Consider the needs and perspective of the recipient.
+
+- Ask clarifying questions and be specific. Rather than asking "Does this make
+sense?" ask "Did I convey the difference between statistical and practical 
+significance?" 
+
+- Do not overload visualizations with unnecessary detail such as chart junk,
+excessive labeling and annotations. Use presentation graphs for presentations,
+not exploratory visualizations. 
+
+- Rely on pre-attentive attributes in visualizations to let the audience
+understand the contents intuitively, rather than having to think about it.
+
+- Use storytelling (@sec-story-telling). 
+
+- Do not make the audience read text on slides. Do not read the text on slides
+yourself.
+
+- When using PowerPoint or other slide-making tools, use the assertion–evidence 
+format for slides. A headline-style title provides the assertion of the slide, the 
+important message being conveyed. The remainder of the slide consists of few 
+bullets (if any) and visuals that provide evidence of the assertion.
+
+- Avoid "eye charts". Graphics and tables are not meant to test the visual 
+acuity of the audience.
+
+- Limit the number of items the audience has to hold in their head to 3--5.
+
+- Consider the person behind the screen: written communication does not benefit
+from face-to-face contact so choose words wisely---especially when using digital
+channels such as email, messaging services, social media. 
+
+- Be mindful of time zones in electronic communication. Nobody wants to see an 
+email at 9:30 pm (or 5:00 am) marked High Importance because you did not remember 
+that you are on a global team.
+
+- Use active listening. Try to hear what is being said rather than waiting for
+your chance or turn to speak (@sec-listening).
+
+- Use metaphors, analogies, and similes to explain technical concepts 
+(@sec-metaphors).
+
+- Pay attention. To the audience, to the environment, and to yourself (@sec-attention).
+
+- Practice (the individual skills) and rehearse (in a real setting). 
+
+- Do not *Reply All* to emails unless that is what you really really need to do. 
+When folks erroneously reply to all recipients do not *Reply All* to tell them to stop.
+That is known as the Reply All Apocalypse.
+
+>Reply all: Please everyone, stop hitting reply all.
+
+
+![Reply All Kitten](images/ReplyAllKitten.jpg){#fig-reply-all fig-align=center width=50%}
+
+---
+
+Not unlike the restaurant reservation example, creating communication that is
+computationally kind to the recipient can increase mental burden for the 
+communicator. We have to spend more time and effort crafting compelling visuals
+rather than copy-paste from a paper to a slide deck. We have to craft stories
+rather than reciting facts. We have to practice and rehearse to give an 
+extemporaneous speech. 
+
+
+<!--- 
+https://www.jetlearn.com/blog/empathy-in-the-digital-age
+--->

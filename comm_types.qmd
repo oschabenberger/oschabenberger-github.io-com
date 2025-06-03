@@ -17,11 +17,41 @@ From https://online.utpb.edu/about-us/articles/communication/how-much-of-communi
 The 55/38/7 Formula
 -------------------------
 
-The 90% figure wasn’t plucked out of thin air. It was Albert Mehrabian, a researcher of body language, who first broke down the components of a face-to-face conversation. He found that communication is 55% nonverbal, 38% vocal, and 7% words only. This is where the idea that the vast majority of communication is nonverbal originated, but does this really mean that less than 10% of information is conveyed in spoken words?
+The 90% figure wasn’t plucked out of thin air. It was Albert Mehrabian, a researcher 
+of body language, who first broke down the components of a face-to-face conversation. 
+He found that communication is 55% nonverbal, 38% vocal, and 7% words only. This is 
+where the idea that the vast majority of communication is nonverbal originated, but 
+does this really mean that less than 10% of information is conveyed in spoken words?
 
-It turns out that the above formula was developed with a specific purpose in mind: comparing facial and vocal components to decipher a person’s attitude. According to Mehrabian, “When there are inconsistencies between attitudes communicated verbally and posturally, the postural component should dominate in determining the total attitude that is inferred.” Is 90% of communication nonverbal? No, information is conveyed verbally, but in a face-to-face conversation, body language and facial expressions can have an incredible impact on how information is interpreted.
+It turns out that the above formula was developed with a specific purpose in mind:
+comparing facial and vocal components to decipher a person’s attitude. According to 
+Mehrabian, 
 
-In “The Definitive Book of Body Language,” Allan and Barbara Pease analyzed thousands of recorded sales negotiations from the 1970s and 1980s and found that body language accounted for the majority of the impact made negotiating. They also considered how the person with the strongest argument usually wins in negotiations over the phone but not always in face-to-face conversations. Although the idea that 90% of communication is nonverbal can be put to rest, a person’s body language and our first impression of them can heavily influence our decision-making.
+:::{.quote}
+When there are inconsistencies between attitudes communicated verbally and posturally, 
+the postural component should dominate in determining the total attitude that is inferred.
+:::
+
+The communication happened in a situation where verbal and non-verbal channels
+were **inconsistent**. In that case, non-verbal communication is more important.
+If someone writhes in agony on the ground with an open fracture, a bone sticking
+out, and yells "I am OK!", we believe the non-verbal cues of a person in pain
+and not the spoken words. They are **not** OK.
+
+In normal situations, where the verbal and non-verbal channels are aligned, 
+non-verbal communication is not the most important channel. Otherwise we would 
+not be able to comprehend the Gettysburg address by reading. But non-verbal 
+communication is a very important channel. In a face-to-face conversation, body 
+language and facial expressions have a remarkable impact on how information is 
+interpreted and retained.
+
+In “The Definitive Book of Body Language,” Allan and Barbara Pease analyzed thousands 
+of recorded sales negotiations from the 1970s and 1980s and found that body language 
+accounted for the majority of the impact made negotiating. They also considered how 
+the person with the strongest argument usually wins in negotiations over the phone
+but not always in face-to-face conversations. Although the idea that 90% of 
+communication is nonverbal can be put to rest, a person’s body language and our 
+first impression of them can heavily influence our decision-making.
 
 The Power of Body Language
 -------------------------

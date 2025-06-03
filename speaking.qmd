@@ -1,21 +1,86 @@
-<style>
-.flushright {
-   text-align: right;
-}
-</style>
 
 # Speaking {#sec-speaking}
 
 ::: {.callout-tip title="Quotes"}
-:::: {.flushright data-latex=""}
-*According to most studies, people’s number one fear is public speaking. Number two is death. \
+:::: {.flushright}
+According to most studies, people’s number one fear is public speaking. Number two is death. \
 Death is number two. Does that sound right? This means to the average person, \
-if you go to a funeral, you’re better off in the casket than delivering the eulogy.*\
-Jerry Seinfeld\
-\
-*There are two types of speakers: Those who get nervous and those who are liars.*\
-Mark Twain\
-\
-*You are not nervous, you are excited.*
+if you go to a funeral, you’re better off in the casket than delivering the eulogy.\
+[Jerry Seinfeld]{.quoteauthor}
+
+There are two types of speakers: Those who get nervous and those who are liars.\
+[Mark Twain]{.quoteauthor}
+
+You are not nervous, you are excited.
 ::::
 :::
+## Glossophobia
+
+**Glossophobia** is the is the fear of public speaking. It is a form of social anxiety
+that goes beyond being nervous; it is an intense fear that can be paralyzing and
+can be associated with physical symptoms such as sweating, dry mouth, rapid
+heartbeat, high blood pressure, nausea, shaking, dilated pupils, a tense or shaky voice, 
+shortness of breath, excessive vocal fillers, a lump in your throat, and going 
+blank. In extreme cases you might throw up or pass out---that makes for a memorable
+speech.
+
+Fear of public speaking is extremely common. Estimates are as high as 75% of
+the population being affected by glossophobia in some way. 
+It is a social anxiety because we believe that interactions with others will result 
+in negative evaluations, judgment, and rejection. This creates negative thoughts
+of failure and the belief of being incapable of speaking well in front of others. 
+
+What causes glossophobia is not well understood. Traumatic past events play a 
+role. Being ridiculed or embarrassed in a situation of public speaking can turn 
+a confident speaker into someone afraid of and avoiding public speaking.
+
+Being full of dread and going through physical responses does not improve ones 
+quality of speech. Afraid of public speaking you avoid public speaking at all cost. 
+Glossophobia is a self-fulfilling feedback loop. 
+
+Because of the social aspect of glossophobia, the most dreaded speaking situation
+is in front of peers: the student presenting to the class, the brother of the bride
+speaking at the wedding, the researcher delivering a talk at the scientific conference, 
+the data scientist explaining the solution to the business stakeholders. The
+judgment of these peer audiences are particularly important to us and potentially
+damaging socially or professionally. There is some truth to the Jerry Seinfeld 
+quote.
+
+The good news is that help is on the way. Glossophobia can be overcome. Among
+the remedies are cognitive behavioral therapy (CBT), mindfulness, meditation,
+muscle relaxation exercises, virtual reality exposure therapy (experiencing
+the anxiety inducing situation through virtual reality), and medication (beta-blockers
+and such). CBT attempts to replace negative self-talk with positive self-talk
+and is a popular option. You might also have heard of recommendations such as 
+"imagine the audience members are in their underwear" or smelling lavender.
+
+:::{.callout-tip title="Personal Experience" collapse=true}
+Is it easier to speak in front of a large audience or a small audience? It 
+does not really matter. You'd think that "failing" in front of a large audience
+is more embarrassing and consequential, but it is the small audiences that 
+matter socially or professionally where we feel the most judged and where a lot
+is at stake.
+
+Advice such as "imagine the audience in their underwear" is meant to de-escalate
+the perceived threat from the audience. Presenting to larger audiences in a 
+production setting---such as a stage---the de-escalation occurs because
+you often cannot see (or identify) the audience members. The bright lights that 
+illuminate the stage make the speaker visible to the audience and at the same
+time make the audience nearly invisible to the speaker. 
+
+I recall speaking from a stage in front of thousands at a user conference and 
+was not able to identify anyone in the audience past the first few rows. If you 
+are worried about large audiences, this is a great way to tune them out.
+:::
+
+I am not going to comment on these treatment approaches and advice such as 
+smelling herbs or imaginary audiences. The best approach to deal with fear of public 
+speaking---in my opinion---is to practice public speaking and to get better at it. 
+It is a skill that can be learned and practiced. 
+
+>Pitter patter, let's get at 'er.
+
+![11 Public speaking strategies according to Heather Maietta on  [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7307033215309959168/).](images/PublicSpeaking_11Rules.jpeg){#fig-eleven-rules fig-align=center width=75% .lightbox}
+
+
+

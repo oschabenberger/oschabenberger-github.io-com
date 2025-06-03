@@ -17,16 +17,19 @@ Ten principles of technical writing: https://www.writerswrite.co.za/ten-principl
 
 
 :::: {.callout-tip title="Quotes"}
-::: {.flushright data-latex=""}
-*Every data scientist is also a writer.*\
-\
-*Writing is thinking.*\
-\
-*Authors may sell their books: but they give themselves away.*\
-F.L. Lucas, Style: the art of writing well.\
-\
-*I didn't have time to write a short letter, so I wrote a long one instead.*\
-Blaise Pascal (often incorrectly attributed to Mark Twain)
+::: {.flushright}
+Every data scientist is also a writer.
+
+
+Writing is thinking.
+
+
+Authors may sell their books: but they give themselves away.\
+[F.L. Lucas, Style: the art of writing well.]{.quoteauthor}
+
+
+I didn't have time to write a short letter, so I wrote a long one instead.\
+[Blaise Pascal (often incorrectly attributed to Mark Twain)]{.quoteauthor}
 :::
 ::::
 

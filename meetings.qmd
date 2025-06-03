@@ -1,22 +1,16 @@
 
 # Meetings {#sec-meeting}
 
-```{=html}
-<style>
-.flushright {
-   text-align: right;
-}
-</style>
-```
-
 :::{.callout-tip title="Quotes"}
 
-::: {.flushright data-latex=""}
-*Meetings embody and reveal your team culture. They expose who has the power, who gets listened to, and who feels comfortable speaking up.*\
-Minette Norman, The Boldly Inclusive Leader.
+::: {.flushright}
+Meetings embody and reveal your team culture. They expose who has the power, who 
+gets listened to, and who feels comfortable speaking up.\
+[Minette Norman, The Boldly Inclusive Leader]{.quoteauthor}
 
-*I wish I could go to more meetings today*\
-No one---ever.
+
+I wish I could go to more meetings today\
+[No one---ever]{.quoteauthor}
 
 Ants do not have meetings. How can they accomplish so much as a group? Oh, wait.
 
